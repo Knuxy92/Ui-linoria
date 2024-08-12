@@ -73,64 +73,6 @@ table.insert(Library.Signals, RenderStepped:Connect(function(Delta)
 	end
 end))
 
--- Get the services
-local TweenService = game:GetService("TweenService")
-local Players = game:GetService("Players")
-
--- Get the player’s PlayerGui
-local player = Players.LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-
--- Get the Frame element you want to animate
-local frame = playerGui:WaitForChild("ScreenGui"):WaitForChild("Frame")
-
--- Define the tween information
-local tweenInfo = TweenInfo.new(
-	2, -- Duration for each color change
-	Enum.EasingStyle.Linear, -- Easing style
-	Enum.EasingDirection.InOut, -- Easing direction
-	0, -- Number of times to repeat (0 for no repeat)
-	false -- Reverse tween
-)
-
--- Define a function to create a tween for a specific color
-local function createColorTween(color)
-	return TweenService:Create(frame, tweenInfo, {
-		BackgroundColor3 = color
-	})
-end
-
--- Define the colors of the rainbow
-local rainbowColors = {
-	Color3.fromHSV(0, 1, 1), -- Red
-	Color3.fromHSV(0.16, 1, 1), -- Orange
-	Color3.fromHSV(0.33, 1, 1), -- Yellow
-	Color3.fromHSV(0.5, 1, 1), -- Green
-	Color3.fromHSV(0.67, 1, 1), -- Blue
-	Color3.fromHSV(0.83, 1, 1), -- Indigo
-	Color3.fromHSV(1, 1, 1) -- Violet
-}
-
--- Create a list of tweens for each color transition
-local tweens = {}
-for i = 1, #rainbowColors do
-	local nextColor = rainbowColors[i % #rainbowColors + 1]
-	table.insert(tweens, createColorTween(nextColor))
-end
-
--- Create the tween sequence
-local tweenSequence = TweenService:Create(frame, TweenInfo.new(
-	tweenInfo.Time * #tweens, -- Total duration of the sequence
-	Enum.EasingStyle.Linear, -- Easing style for sequence
-	Enum.EasingDirection.InOut -- Easing direction for sequence
-	), {
-		TweenGoal = tweens
-	})
-
--- Play the tween sequence
-tweenSequence:Play()
-
-
 local function GetPlayersString()
 	local PlayerList = Players:GetPlayers();
 
@@ -307,7 +249,7 @@ function Library:AddToolTip(InfoStr, HoverInstance)
 			Tooltip.Position = UDim2.fromOffset(Mouse.X - 30, Mouse.Y - 24)
 		end
 	end)
-	
+
 	HoverInstance.MouseLeave:Connect(function()
 		IsHovering = false
 		Tooltip.Visible = false
@@ -319,7 +261,7 @@ function Library:AddToolTipImage(Options, HoverInstance)
 		Image = Options.Image,
 		Size = Options.Size or {X=145,Y=100},
 	}
-	
+
 	local Tooltip = Library:Create('ImageLabel', {
 		BackgroundColor3 = Library.MainColor,
 		BorderColor3 = Library.OutlineColor,
@@ -330,14 +272,14 @@ function Library:AddToolTipImage(Options, HoverInstance)
 
 		Visible = false,
 	})
-	
+
 	Library:AddToRegistry(Tooltip, {
 		BackgroundColor3 = 'MainColor';
 		BorderColor3 = 'OutlineColor';
 	});
 
 	local IsHovering = false
-	
+
 	HoverInstance.MouseEnter:Connect(function()
 		if Library:MouseIsOverOpenedFrame() then
 			return
