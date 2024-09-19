@@ -426,9 +426,9 @@ local ClosureBindings = {
 			Parent = RunService:IsStudio() and LocalPlayer.PlayerGui or game:GetService("CoreGui"),
 			Name = "Normal Hub"
 		})
-		
-		
-		
+
+
+
 		ProtectGui(GUI)
 		NotificationModule:Init(GUI)
 
@@ -541,18 +541,18 @@ local ClosureBindings = {
 
 			Library.MinimizeKey = Config.MinimizeKey
 
-			Library.UseAcrylic = Config.Acrylic
+			Library.UseAcrylic = false
 			if Library.UseAcrylic then
 				Acrylic.init()
 			end
-			
+
 
 			Library.Window = Window
 			Library:SetTheme(Config.Theme)
 
 			return Window
 		end
-		
+
 		function Library:ChangeTitle(Title, SubTitle)
 			if Library.Window and Title then
 				Library.Window.Title = Title
@@ -584,12 +584,8 @@ local ClosureBindings = {
 			if Library.Window then
 				if Library.UseAcrylic then
 					Library.Acrylic = Value
-					Library.Window.AcrylicPaint.Model.Transparency = Value and 0.98 or 1
-					if Value then
-						Acrylic.Enable()
-					else
-						Acrylic.Disable()
-					end
+					Library.Window.AcrylicPaint.Model.Transparency = 1
+					Acrylic.Disable()
 				end
 			end
 		end
@@ -4070,7 +4066,7 @@ local ClosureBindings = {
 					TextColor3 = "SubText",
 				},
 			})
-			
+
 			--[[
 						local SliderDisplay = New("TextLabel", {
 				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
@@ -4088,7 +4084,7 @@ local ClosureBindings = {
 				},
 			})
 			]]
-			
+
 
 
 			local SliderInner = New("Frame", {
@@ -4107,8 +4103,8 @@ local ClosureBindings = {
 				New("UISizeConstraint", {
 					MaxSize = Vector2.new(150, math.huge),
 				}),
-				
-				
+
+
 				SliderDisplay,
 				SliderFill,
 				SliderRail,
@@ -4125,7 +4121,7 @@ local ClosureBindings = {
 					Dragging = false
 				end
 			end)
-		
+
 			Creator.AddSignal(SliderInner.InputBegan, function(Input)
 				if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
 					Dragging = true
@@ -4137,7 +4133,7 @@ local ClosureBindings = {
 					Dragging = false
 				end
 			end)
-			
+
 			Creator.AddSignal(SliderDisplay:GetPropertyChangedSignal("Text"), function()
 				if tonumber(SliderDisplay.Text) and SliderDisplay.Text:len() > 0 then
 					Slider:SetValue(tonumber(SliderDisplay.Text))
