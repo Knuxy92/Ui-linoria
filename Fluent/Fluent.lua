@@ -445,8 +445,8 @@ local ClosureBindings = {
 
 			Theme = "Normal Theme",
 			DialogOpen = false,
-			UseAcrylic = true,
-			Acrylic = true,
+			UseAcrylic = false,
+			Acrylic = false,
 			Transparency = true,
 			MinimizeKeybind = nil,
 			MinimizeKey = Enum.KeyCode.LeftControl,
@@ -522,7 +522,7 @@ local ClosureBindings = {
 			Config.SubTitle = Config.SubTitle or ""
 			Config.TabWidth = Config.TabWidth or 170
 			Config.Size = Config.Size or UDim2.fromOffset(590, 470)
-			Config.Acrylic = Config.Acrylic or true
+			Config.Acrylic = false
 			Config.Theme = Config.Theme or "Dark"
 			Config.MinimizeKey = Config.MinimizeKey or Enum.KeyCode.LeftControl
 
