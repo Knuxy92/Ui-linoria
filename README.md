@@ -76,7 +76,7 @@ local Window = Fluent:CreateWindow({
 
 **Create Tap**
 ```lua
-== // Icon lucide.dev/icons And Check Name Icon In github.com/dawid-scripts/Fluent/blob/master/src/Icons.lua
+-- // Icon lucide.dev/icons And Check Name Icon In github.com/dawid-scripts/Fluent/blob/master/src/Icons.lua
 local Tap = {
 	General = Window:AddTab({Title = "Generals", Icon = "box"}),
 	Settings = Window:AddTab({Title = "Settings", Icon = "settings"})
