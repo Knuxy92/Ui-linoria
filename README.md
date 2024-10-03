@@ -85,7 +85,7 @@ local Tap = {
 
 **Function Create Toggle**
 ```lua
-	Toggle = function(Section, NameIndex, Description, ConfigName, Function, ...)
+Toggle = function(Section, NameIndex, Description, ConfigName, Function, ...)
 	local Misc = {...}
 	ConfigName = ConfigName or NameIndex
 
