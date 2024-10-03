@@ -7,7 +7,9 @@
 
 # UI DOCUMENT
 ## [Fluent Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Fluent/Fluent.luaa)
-**[Example Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Fluent/Example.lua)
+**[Example Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Fluent/Example.lua)**
+
+
 **Import Ui**
 ```lua
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/main/Fluent/Fluent.lua"))()
