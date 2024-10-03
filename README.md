@@ -6,10 +6,6 @@
 - [@keneikung](https://discordapp.com/users/707400136916992010)
 
 # UI DOCUMENT
-## [Linoria Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Linoria.lua)
-
-
-
 ## [Fluent Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Fluent/Fluent.luaa)
 **Import Ui**
 ```lua
@@ -31,24 +27,24 @@ do
 	Players = game.Players
 	LocalPlayer = game.Players.LocalPlayer
 	Client = game.Players.LocalPlayer
-    
-    ReplicatedStorage = game:GetService('ReplicatedStorage')
-    RunService = game:GetService("RunService")
-    VirtualInputManager = game:GetService('VirtualInputManager')
-    CollectionService = game:GetService("CollectionService")
-    CoreGui = game:GetService("CoreGui")
-    HttpService = game:GetService("HttpService")
-    TeleportService = game:GetService("TeleportService")
-    VirtualUser = game:GetService("VirtualUser")
-    VirtualInputManager = game:GetService("VirtualInputManager")
-    UserInputService = game:GetService("UserInputService")
-    Backpack = LocalPlayer.Backpack
+	
+	ReplicatedStorage = game:GetService('ReplicatedStorage')
+	RunService = game:GetService("RunService")
+	VirtualInputManager = game:GetService('VirtualInputManager')
+	CollectionService = game:GetService("CollectionService")
+	CoreGui = game:GetService("CoreGui")
+	HttpService = game:GetService("HttpService")
+	TeleportService = game:GetService("TeleportService")
+	VirtualUser = game:GetService("VirtualUser")
+	VirtualInputManager = game:GetService("VirtualInputManager")
+	UserInputService = game:GetService("UserInputService")
+	Backpack = LocalPlayer.Backpack
 	request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 	
 	Char = Client.Character
 	Character = Client.Character
 	if not Threads then getgenv().Threads = {} end
-
+	
 	repeat 
 		LocalPlayer = Players.LocalPlayer
 		wait()
@@ -195,47 +191,46 @@ Dropdown = function(section, Name, default, list, multi, ...)
 
 	return CreateDropdown
 end
-
 ```
 
 **Settings Tap**
 ```lua
-	Settings_M = Tap.Settings:AddSection("Misc") do
-		Timeing = Settings_M:AddParagraph({        
-			Title = "Timeing Server"
-		})
-		Toggle(Settings_M, "Auto Loading Configs", "", "AutoLoadingConfigs", function(v)
-			
-		end)
-		Settings_M:AddButton({
-			Title = "Join Normal Hub Discord",
-			Description = "Click to join",
-			Callback = function()
+Settings_M = Tap.Settings:AddSection("Misc") do
+    Timeing = Settings_M:AddParagraph({        
+        Title = "Timeing Server"
+    })
+    Toggle(Settings_M, "Auto Loading Configs", "", "AutoLoadingConfigs", function(v)
+        
+    end)
+    Settings_M:AddButton({
+        Title = "Join Normal Hub Discord",
+        Description = "Click to join",
+        Callback = function()
 
-			end,
-		})
-	end
+        end,
+    })
+end
 
-	RunService.Heartbeat:Connect(function() -- All RunService
-		local TimeSinceLastPlay = os.time() - Old
-		local hours = tostring(math.floor(TimeSinceLastPlay / 3600))
-		local minutes = tostring(math.floor((TimeSinceLastPlay % 3600) / 60))
-		local seconds = tostring(TimeSinceLastPlay % 60)
-		Timeing:SetTitle("Server Joined "..hours.." H "..minutes.." M "..seconds.." S ")
-	end)
+RunService.Heartbeat:Connect(function() -- All RunService
+    local TimeSinceLastPlay = os.time() - Old
+    local hours = tostring(math.floor(TimeSinceLastPlay / 3600))
+    local minutes = tostring(math.floor((TimeSinceLastPlay % 3600) / 60))
+    local seconds = tostring(TimeSinceLastPlay % 60)
+    Timeing:SetTitle("Server Joined "..hours.." H "..minutes.." M "..seconds.." S ")
+end)
 
 
-	InterfaceManager:SetLibrary(Fluent)
-	InterfaceManager:SetFolder("Normal Hub")
-	InterfaceManager:BuildInterfaceSection(Tap.Settings)
-	Window:SelectTab(1)
-	Fluent:Notify({
-		Title = "Normal",
-		Content = "Loading Success !",
-		Duration = 3
-	})
+InterfaceManager:SetLibrary(Fluent)
+InterfaceManager:SetFolder("Normal Hub")
+InterfaceManager:BuildInterfaceSection(Tap.Settings)
+Window:SelectTab(1)
+Fluent:Notify({
+    Title = "Normal",
+    Content = "Loading Success !",
+    Duration = 3
+})
 
-	SaveManager:LoadAutoloadConfig()
-	Fluent:SetTheme("Normal Theme")
-	setfpscap(240)
+SaveManager:LoadAutoloadConfig()
+Fluent:SetTheme("Normal Theme")
+setfpscap(240)
 ```
