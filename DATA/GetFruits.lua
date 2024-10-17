@@ -1,4 +1,4 @@
-{
+return {
   [1] = {
     ["Type"] = "Natural",
     ["Name"] = "Rocket-Rocket",
