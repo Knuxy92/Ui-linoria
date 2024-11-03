@@ -1,7 +1,3 @@
---[[
-   NORMAL HUB EDIT
---]]
-
 local ImportGlobals
 local ObjectTree = {
 	{
@@ -1216,7 +1212,7 @@ local ClosureBindings = {
 			Element.DescLabel = New("TextLabel", {
 				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
 				Text = Desc,
-				TextColor3 = Color3.fromRGB(200, 200, 200),
+				TextColor3 = Color3.fromRGB(221, 221, 221),
 				TextSize = 12,
 				TextWrapped = true,
 				TextXAlignment = Enum.TextXAlignment.Left,
