@@ -5,16 +5,16 @@
 - [@chxy.lua](https://discordapp.com/users/1279788240093577249)
 
 # Dev Script
-** Dark Dex Mobile **
+**Dark Dex Mobile**
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/DarkDex_Mobile.lua"))()
 ```
 
-** Dark Dex Solora **
+**Dark Dex Solora**
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/DarkDex_Solora"))()
 ```
-** Remote Spy mobile **
+**Remote Spy mobile**
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
 ```
