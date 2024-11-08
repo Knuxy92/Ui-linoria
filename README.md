@@ -4,6 +4,21 @@
 - [@Knuxy92](https://discordapp.com/users/1010021431075155979)
 - [@chxy.lua](https://discordapp.com/users/1279788240093577249)
 
+# Dev Script
+** Dark Dex Mobile
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/DarkDex_Mobile.lua"))()
+```
+
+** Dark Dex Solora
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/DarkDex_Solora"))()
+```
+** Remote Spy mobile
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+```
+
 # UI DOCUMENT
 ## [Fluent Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Fluent/Fluent.luaa)
 **[Example Ui](https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Fluent/Example.lua)**
