@@ -539,6 +539,7 @@ function library.Create(options)
 
 		UIListLayout_2.Parent = LeftMain
 		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout_2.Padding = UDim.new(0, 5)
 
 		UIPadding_2.Parent = LeftMain
 
