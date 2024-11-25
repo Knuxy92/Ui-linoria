@@ -602,7 +602,6 @@ function library.Create(options)
 				TweenInfo.new(0.9,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
 				{ImageColor3 = Color3.fromRGB(255, 255, 255)}
 			):Play()
-			print("Next Tap")
 		end)
 
 		delay(1,function() 
@@ -774,13 +773,12 @@ function library.Create(options)
 					TitleText.AnchorPoint = Vector2.new(0, 0.5)
 					TitleText.Position = UDim2.new(0.0441415198, 0, .5, 0)
 					Toggle.Size = UDim2.new(0.949999988, 0, 0, 30)
-					print(Name)
 				end
 
 				ToggleO.Name = "ToggleO"
 				ToggleO.Parent = Toggle
 				ToggleO.AnchorPoint = Vector2.new(0.5, 0.5)
-				ToggleO.BackgroundColor3 = MainBackground
+				ToggleO.BackgroundColor3 = MainBackground or Color3.fromRGB(142, 144, 150)
 				ToggleO.BackgroundTransparency = 0.200
 				ToggleO.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				ToggleO.BorderSizePixel = 0
@@ -790,7 +788,7 @@ function library.Create(options)
 				O.Name = "O"
 				O.Parent = ToggleO
 				O.AnchorPoint = Vector2.new(0, 0.5)
-				O.BackgroundColor3 = Color3.fromRGB(0,0,0)
+				O.BackgroundColor3 = Background2
 				O.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				O.BorderSizePixel = 0
 				O.Position = UDim2.new(0.1, 0, 0.5, 0)
