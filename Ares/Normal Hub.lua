@@ -697,7 +697,10 @@ function library.Create(options)
 					TextLabel_2.Text = Value
 				end;function TextTable:SetColor(Color)
 					TextLabel_2.TextColor3 = Color or TextColorUI or Color3.fromRGB(142, 144, 150)
+				end;function TextTable:SetFontSize(Size)
+					TextLabel_2.TextSize = Size
 				end
+				
 
 				return TextTable
 			end
