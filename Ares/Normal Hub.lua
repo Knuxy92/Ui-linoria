@@ -1928,7 +1928,12 @@ function library.Create(options)
 					relativeX = math.clamp(relativeX, 0, 1)
 					local newPos = UDim2.new(relativeX, 0, 1, 0)
 					ValueFrame:TweenSize(newPos, "Out", "Sine", 0.2, true)
-					local value = math.floor((relativeX * (options.Max - options.Min)) + options.Min)
+					local value = 0
+					if options.Floor then
+						value = string.format("%.1f",((relativeX * (options.Max - options.Min)) + options.Min))
+					else
+						value = math.floor((relativeX * (options.Max - options.Min)) + options.Min)
+					end
 					TextBox_2.Text = tostring(value)
 					callback(value)
 				end
