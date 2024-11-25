@@ -497,7 +497,7 @@ function library.Create(options)
 		else
 			ImageLabel.Image = TapIcon
 		end
-		ImageLabel.ImageColor3 = TapC
+		ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
 		TextLabel.Parent = ButtonTap
 		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -506,7 +506,7 @@ function library.Create(options)
 		TextLabel.BorderSizePixel = 0
 		TextLabel.Size = UDim2.new(1, 0, 1, 0)
 		TextLabel.Text = TapTitle
-		TextLabel.TextColor3 = TapC
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel.TextSize = 11.000
 		TextLabel.TextStrokeTransparency = 0.900
 		TextLabel.FontFace = Font.new("rbxasset://fonts/families/Ubuntu.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
@@ -582,12 +582,12 @@ function library.Create(options)
 					TweenService:Create(
 						v.TextLabel,
 						TweenInfo.new(0.9,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-						{TextColor3 = TapC}
+						{TextColor3 = Color3.fromRGB(255, 255, 255)}
 					):Play()
 					TweenService:Create(
 						v.ImageLabel,
 						TweenInfo.new(0.9,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-						{ImageColor3 = TapC}
+						{ImageColor3 = Color3.fromRGB(255, 255, 255)}
 					):Play()
 				end
 			end
@@ -595,12 +595,12 @@ function library.Create(options)
 			TweenService:Create(
 				TextLabel,
 				TweenInfo.new(0.9,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-				{TextColor3 = Color3.fromRGB(255, 255, 255)}
+				{TextColor3 = TapC}
 			):Play()
 			TweenService:Create(
 				ImageLabel,
 				TweenInfo.new(0.9,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-				{ImageColor3 = Color3.fromRGB(255, 255, 255)}
+				{ImageColor3 = TapC}
 			):Play()
 		end)
 
