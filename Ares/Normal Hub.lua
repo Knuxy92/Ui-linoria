@@ -8,7 +8,6 @@ local RunService = game:GetService('RunService')
 local camera = workspace.CurrentCamera
 local DDX,DDY
 local Mouse = game.Players.LocalPlayer:GetMouse()
-local BlurFrameL = loadstring(game:HttpGet('https://raw.githubusercontent.com/aresZee7/aresLibrary/main/BlurFrame'))()
 local IconGen = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/refs/heads/master/src/Icons.lua"))()['assets']
 
 
@@ -263,9 +262,6 @@ function library.Create(options)
 	UICorner.Parent = Top
 
 	local frame,object = Top, Shadown
-	local BlurFrame2 = BlurFrameL:BlurFrame(Main)
-	if DDX == nil then DDX = object.AbsolutePosition.X end
-	if DDY == nil then DDY = object.AbsolutePosition.Y end
 
 	dragify(frame, object)
 
@@ -364,13 +360,9 @@ function library.Create(options)
 			if OpenUI then
 				OpenUI = false
 				Shadown.Visible = false
-				for i = 1,2 do
-					BlurFrame2[i]:Destroy()
-				end
 			else
 				OpenUI = true
 				Shadown.Visible = true
-				BlurFrame2 = BlurFrameL:BlurFrame(Main)
 			end
 		end
 	end)
@@ -440,13 +432,9 @@ function library.Create(options)
 			if OpenUI then
 				OpenUI = false
 				Shadown.Visible = false
-				for i = 1,2 do
-					BlurFrame2[i]:Destroy()
-				end
 			else
 				OpenUI = true
 				Shadown.Visible = true
-				BlurFrame2 = BlurFrameL:BlurFrame(Main)
 			end
 		end)
 	end
@@ -1160,7 +1148,7 @@ function library.Create(options)
 					end
 				end
 
-				TextLabel_4.Text = text.." (".. 'nil' ..")"
+				TextLabel_4.Text = text.." (".. ' None ' ..")"
 				function DropF:Add(Text)
 					local Button_2 = Instance.new("Frame")
 					local UICorner_10 = Instance.new("UICorner")
@@ -2073,5 +2061,4 @@ function library.Create(options)
 	end
 	return library.TapGroup
 end
-
 return library
