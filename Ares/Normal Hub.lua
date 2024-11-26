@@ -1476,7 +1476,7 @@ function library.Create(options)
 					local DropFF = default
 
 					Dropdown.Name = "Dropdown"
-					Dropdown.Parent = Sections
+					Dropdown.Parent = par or Sections
 					Dropdown.BackgroundColor3 = Background2
 					Dropdown.BackgroundTransparency = 1.000
 					Dropdown.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1574,7 +1574,7 @@ function library.Create(options)
 						end
 					end
 
-					TextLabel_4.Text = text.." (".. 'nil' ..")"
+					TextLabel_4.Text = text.." (".. 'None' ..")"
 					function DropF:Add(Text)
 						local Button_2 = Instance.new("Frame")
 						local UICorner_10 = Instance.new("UICorner")
