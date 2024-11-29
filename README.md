@@ -16,7 +16,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/re
 ```
 **Remote Spy mobile**
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/SimpleSpy/refs/heads/main/Mobile.lua"))()
 ```
 
 # UI DOCUMENT
