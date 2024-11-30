@@ -6172,3 +6172,5 @@ local FishData = {
 		["FromLimited"] = "Fischgiving"
 	},
 }
+
+return FishData
