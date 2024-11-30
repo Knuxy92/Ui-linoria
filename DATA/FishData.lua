@@ -2027,7 +2027,7 @@ local FishData = {
 	},
 	["Bone"] = {
 		["WeightPool"] = { 10, 25 },
-		["Chance"] = 100 * v2["Brine Pool"].Trash,
+		["Chance"] = 100 * tbl["Brine Pool"].Trash,
 		["Rarity"] = "Trash",
 		["Resilience"] = 80,
 		["Description"] = "A bone from the remains of a dissolved creature.",
@@ -2050,7 +2050,7 @@ local FishData = {
 	},
 	["Gazerfish"] = {
 		["WeightPool"] = { 80, 140 },
-		["Chance"] = 100 * v2["Brine Pool"].Common,
+		["Chance"] = 100 * tbl["Brine Pool"].Common,
 		["Rarity"] = "Common",
 		["Resilience"] = 85,
 		["Description"] = "The Gazerfish is a fast-moving prey fish within the Brine Pool of the Desolate Deep. They have a singular large eyeball on the front of their bodies, which they can close to disguise themselves from possible predators during the night. When they are most active during the day, they swim near the surface looking for smaller creatures to feed on.",
@@ -2073,7 +2073,7 @@ local FishData = {
 	},
 	["Brine Shrimp"] = {
 		["WeightPool"] = { 1, 3 },
-		["Chance"] = 90 * v2["Brine Pool"].Uncommon,
+		["Chance"] = 90 * tbl["Brine Pool"].Uncommon,
 		["Rarity"] = "Uncommon",
 		["Resilience"] = 65,
 		["Description"] = "The Brine Shrimp is a small crustacean abundant in the Brine Pool within the Desolate Deep. They possess the ability to adapt and survive within harsh conditions, particularly incredibly salty water like the Brine Pool. They feed on microorganisms during the day, and are at the bottom of the food chain within the Brine Pool.",
@@ -2098,7 +2098,7 @@ local FishData = {
 	},
 	["Globe Jellyfish"] = {
 		["WeightPool"] = { 140, 240 },
-		["Chance"] = 60 * v2["Brine Pool"].Unusual,
+		["Chance"] = 60 * tbl["Brine Pool"].Unusual,
 		["Rarity"] = "Unusual",
 		["Resilience"] = 25,
 		["Description"] = "The Globe Jellyfish is a distant relative of the elusive Emperor Jellyfish. They are highly venomous instead of electrifying, which makes it a threat to any unfortunate creatures who come in contact with it.",
@@ -2116,7 +2116,7 @@ local FishData = {
 	},
 	["Dweller Catfish"] = {
 		["WeightPool"] = { 100, 160 },
-		["Chance"] = 40 * v2["Brine Pool"].Rare,
+		["Chance"] = 40 * tbl["Brine Pool"].Rare,
 		["Rarity"] = "Rare",
 		["Resilience"] = 20,
 		["ProgressEfficiency"] = 0.8,
@@ -2209,7 +2209,7 @@ local FishData = {
 	},
 	["Stalactite"] = {
 		["WeightPool"] = { 60, 130 },
-		["Chance"] = 100 * v2["Desolate Deep"].Trash,
+		["Chance"] = 100 * tbl["Desolate Deep"].Trash,
 		["Rarity"] = "Trash",
 		["Resilience"] = 80,
 		["Description"] = "A sharp and spiky rock formation that has fallen from the ceiling of a formidable cavern.",
@@ -2234,7 +2234,7 @@ local FishData = {
 	},
 	["Coral Geode"] = {
 		["WeightPool"] = { 180, 180 },
-		["Chance"] = 17 * v2["Desolate Deep"].Uncommon,
+		["Chance"] = 17 * tbl["Desolate Deep"].Uncommon,
 		["Rarity"] = "Uncommon",
 		["Resilience"] = 120,
 		["Description"] = "A geode filled with deep dark items and fish. Possibly has been untouched for years!- Like a coral reef Christmas!",
@@ -2321,7 +2321,7 @@ local FishData = {
 	},
 	["Slate Tuna"] = {
 		["WeightPool"] = { 300, 600 },
-		["Chance"] = 90 * v2["Desolate Deep"].Common,
+		["Chance"] = 90 * tbl["Desolate Deep"].Common,
 		["Rarity"] = "Common",
 		["Resilience"] = 35,
 		["Description"] = "With their Stone Exocranium on the front of their body, the invasive Slate Tuna is able to hunt and kill pray at alarmingly high rates. However, this stone noggin of theirs also ends up in slower swim speeds for this predator, resulting with this fish being lower down on the food chain in this deep chasm.",
@@ -2346,7 +2346,7 @@ local FishData = {
 	},
 	["Phantom Ray"] = {
 		["WeightPool"] = { 40, 60 },
-		["Chance"] = 90 * v2["Desolate Deep"].Uncommon,
+		["Chance"] = 90 * tbl["Desolate Deep"].Uncommon,
 		["Rarity"] = "Uncommon",
 		["Resilience"] = 45,
 		["Description"] = "The Phantom Ray is a menacing yet beautiful species of ray, resembling the shape of an anchor with bioluminescent engravings throughout its body, as well as a translucent fin that they use to move around. They typically like to feed on microorganisms during the night, and spend most of the day sitting underneath ledges or large vegetation.",
@@ -2369,7 +2369,7 @@ local FishData = {
 	},
 	["Rockstar Hermit Crab"] = {
 		["WeightPool"] = { 4, 12 },
-		["Chance"] = 25 * v2["Desolate Deep"].Unusual,
+		["Chance"] = 25 * tbl["Desolate Deep"].Unusual,
 		["Rarity"] = "Unusual",
 		["Resilience"] = 100,
 		["Description"] = "The Rockstar Hermit Crab is a unique evolutionary species, originating from the simple hermit crab. They possess antennae resembling two lightning-bolts on either side of their head, which is where their name comes from. Caught with rods or crab cages in the Desolate Deep.",
@@ -2392,7 +2392,7 @@ local FishData = {
 	},
 	["Cockatoo Squid"] = {
 		["WeightPool"] = { 4, 20 },
-		["Chance"] = 45 * v2["Desolate Deep"].Unusual,
+		["Chance"] = 45 * tbl["Desolate Deep"].Unusual,
 		["Rarity"] = "Unusual",
 		["Resilience"] = 35,
 		["Description"] = "The Cockatoo Squid is an intriguing species of squid. Their bodies are almost entirely translucent and bioluminescent, which they can use to hide from possible predators. They typically leave their hiding spots at night in search of microorganisms to feed on.",
@@ -2410,7 +2410,7 @@ local FishData = {
 	},
 	["Banditfish"] = {
 		["WeightPool"] = { 150, 200 },
-		["Chance"] = 75 * v2["Desolate Deep"].Rare,
+		["Chance"] = 75 * tbl["Desolate Deep"].Rare,
 		["Rarity"] = "Rare",
 		["Resilience"] = 30,
 		["Description"] = "Banditfish are insanely fast hunters and swimmers, hence their name. They have a single rudder-like fin at the back of their bodies, which they move in a swaying motion to glide throughout the waters. Despite being remarkably good at hunting smaller prey, they are still no match for the greater creatures within the Desolate Deep.",
