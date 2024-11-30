@@ -393,7 +393,7 @@ function library.Create(options)
 	SearchPage.Size = UDim2.new(0.769999981, 0, 0.850000024, 0)
 	SearchPage.ScrollBarThickness = 1
 	SearchPage.Visible = false
-	
+
 	local UIPadding = Instance.new("UIPadding")
 	local UIListLayout = Instance.new("UIListLayout")
 	UIPadding.Parent = SearchPage
@@ -402,11 +402,11 @@ function library.Create(options)
 	UIListLayout.Parent = SearchPage
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	UIListLayout.Padding = UDim.new(0, 5)
-	
+
 	UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 		SearchPage.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y + 35)
 	end)
-	
+
 	local SearchToggle = false
 	SearchButton.MouseButton1Click:Connect(function()
 		SearchToggle = not SearchToggle
@@ -417,7 +417,7 @@ function library.Create(options)
 		TweenService:Create(SearchFrameBox,TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Size = SearchToggle and UDim2.new(0, -130, 0, 25) or UDim2.new(0, 0, 0, 25)}):Play()
 		TweenService:Create(SearchButton,TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),{Position = SearchToggle and UDim2.new(0.95, 0, 0.499999881, 0) or UDim2.new(0.925, 0, 0.499999881, 0)}):Play()
 	end)
-	
+
 	local Tap = Instance.new("Frame")
 	local ScrollingFrame = Instance.new("ScrollingFrame")
 	local UIPadding = Instance.new("UIPadding")
@@ -457,7 +457,7 @@ function library.Create(options)
 
 	local OpenUI = true
 	UserInputService.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.RightControl then
+		if input.KeyCode == Enum.KeyCode.LeftControl then
 			if OpenUI then
 				OpenUI = false
 				Shadown.Visible = false
@@ -593,8 +593,11 @@ function library.Create(options)
 		TextLabel.BackgroundTransparency = 1.000
 		TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		TextLabel.BorderSizePixel = 0
-		TextLabel.Size = UDim2.new(1, 0, 1, 0)
+		TextLabel.AnchorPoint = Vector2.new( 0.5, 0.5)
+		TextLabel.Size = UDim2.new( 0.5, 0, 1, 0)
+		TextLabel.Position = UDim2.new(0.52, 0, 0.5, 0)
 		TextLabel.Text = TapTitle
+		TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextLabel.TextSize = 11.000
 		TextLabel.TextStrokeTransparency = 0.900
@@ -780,17 +783,38 @@ function library.Create(options)
 					TextLabel_2.TextSize = 12.000
 					TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 					TextLabel_2.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-					
-					return TextLabel_2
+					TextLabel_2.TextTruncate = Enum.TextTruncate.AtEnd
+
+					local TextTable = {}
+					function TextTable:Set(Value)
+						TextLabel_2.Text = Value
+						local textHeight = TextLabel_2.TextBounds.Y
+						if textHeight > 12 then
+							if _G.Debug then
+								warn('[DEBUG]', textHeight)
+							end
+							Lable.Size = UDim2.new(0.949999988, 0, 0, textHeight)
+						end
+					end;function TextTable:SetColor(Color)
+						TextLabel_2.TextColor3 = Color or TextColorUI or Color3.fromRGB(142, 144, 150)
+					end;function TextTable:SetFontSize(Size)
+						TextLabel_2.TextSize = Size
+					end
+
+					return TextTable
 				end
-				local TextLabel_2 = add();add(SearchPage)
+				local TextLabel_2 = add()
+				local TextLabel_3 = add(SearchPage)
 				local TextTable = {}
 				function TextTable:Set(Value)
-					TextLabel_2.Text = Value
+					TextLabel_2:Set(Value)
+					TextLabel_3:Set(Value)
 				end;function TextTable:SetColor(Color)
-					TextLabel_2.TextColor3 = Color or TextColorUI or Color3.fromRGB(142, 144, 150)
+					TextLabel_2:SetColor(Color)
+					TextLabel_3:SetColor(Color)
 				end;function TextTable:SetFontSize(Size)
-					TextLabel_2.TextSize = Size
+					TextLabel_2:SetFontSize(Size)
+					TextLabel_3:SetFontSize(Size)
 				end
 				return TextTable
 			end
@@ -1076,7 +1100,7 @@ function library.Create(options)
 					function ToggleTable:UpdateDis(Value)
 						TitleDis.Text = Value
 					end
-					
+
 					task.spawn(function()
 						while wait(2) do
 							if default then
@@ -1126,7 +1150,7 @@ function library.Create(options)
 							end 
 						end
 					end)
-					
+
 					return ToggleTable
 				end
 				local ToggleTable = add();add(SearchPage)
@@ -1252,6 +1276,7 @@ function library.Create(options)
 					TextLabel_4.Text = text.." (".. default ..")"
 					TextLabel_4.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
 					TextLabel_4.TextSize = TextSize - 1
+					TextLabel_4.TextTruncate = Enum.TextTruncate.AtEnd
 
 					ImageButton.Parent = Main1
 					ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1411,7 +1436,7 @@ function library.Create(options)
 					UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 						ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y + 35)
 					end)
-				
+
 					ImageButton.MouseButton1Click:Connect(function()
 						if not DropG then
 							DropG = true
@@ -1433,7 +1458,7 @@ function library.Create(options)
 					for _, v in next,list do
 						DropF:Add(v)
 					end
-					
+
 					task.spawn(function()
 						while wait(2) do
 							TextLabel_4.Text = text.." (".. default ..")"
@@ -1457,12 +1482,13 @@ function library.Create(options)
 			end
 			library.FuncMain.CreateMultiDropdown = function(options)
 				local drop2
-				local function add(par)
-					local text = options.Name;wait()
-					local default = options.Value or {""}
-					local list = options.List
-					local callback = options.Callback
+				local text = options.Name;wait()
+				local default = options.Value or {""}
+				local list = options.List
+				local callback = options.Callback
+				local DropFF = default
 
+				local function add(par)
 					local Dropdown = Instance.new("Frame")
 					local UICorner_9 = Instance.new("UICorner")
 					local Main1 = Instance.new("Frame")
@@ -1473,9 +1499,8 @@ function library.Create(options)
 					local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 					local UIListLayout_4 = Instance.new("UIListLayout")
 					local UIPadding_4 = Instance.new("UIPadding")
-					local DropFF = default
 
-					Dropdown.Name = "Dropdown"
+					Dropdown.Name = text
 					Dropdown.Parent = par or Sections
 					Dropdown.BackgroundColor3 = Background2
 					Dropdown.BackgroundTransparency = 1.000
@@ -1505,6 +1530,7 @@ function library.Create(options)
 					TextLabel_4.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 					TextLabel_4.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
 					TextLabel_4.TextSize = TextSize - 1
+					TextLabel_4.Text = text.." (".. 'None' ..")"
 
 					local function UpdateTextLabel()
 						local maxDisplayCount = 3
@@ -1512,7 +1538,11 @@ function library.Create(options)
 						if #DropFF > maxDisplayCount then
 							textLabel_7_text = textLabel_7_text .. table.concat(DropFF, ", ", 1, maxDisplayCount) .. ", ..."
 						else
-							textLabel_7_text = textLabel_7_text .. table.concat(DropFF, ", ")
+							if #DropFF < 1 then
+								TextLabel_4.Text = text.." (".. 'None' ..")"
+							else
+								textLabel_7_text = textLabel_7_text .. table.concat(DropFF, ", ")
+							end
 						end
 						textLabel_7_text = textLabel_7_text .. ")"
 						TextLabel_4.Text = textLabel_7_text
@@ -1574,14 +1604,13 @@ function library.Create(options)
 						end
 					end
 
-					TextLabel_4.Text = text.." (".. 'None' ..")"
 					function DropF:Add(Text)
 						local Button_2 = Instance.new("Frame")
 						local UICorner_10 = Instance.new("UICorner")
 						local TextButton_3 = Instance.new("TextButton")
 						local TextLabel_5 = Instance.new("TextLabel")
 
-						Button_2.Name = "Button"
+						Button_2.Name = Text
 						Button_2.Parent = ScrollingFrame_2
 						Button_2.BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)
 						Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1613,35 +1642,6 @@ function library.Create(options)
 						TextLabel_5.Text = Text
 						TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
 						TextLabel_5.TextSize = TextSize
-
-						if table.find(DropFF, TextLabel_5.Text) then
-							for i, v in next, ScrollingFrame_2:GetChildren() do
-								if v:IsA("Frame") then 
-									TweenService:Create(
-										v,
-										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-										{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
-									):Play()
-									TweenService:Create(
-										v.TextLabel,
-										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-										{TextColor3 = Color3.fromRGB(213, 213, 213)}
-									):Play()
-								end
-							end
-							TweenService:Create(
-								Button_2,
-								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
-							):Play()
-							TweenService:Create(
-								TextLabel_5,
-								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{TextColor3 = Color3.fromRGB(255,255,255)}
-							):Play()
-							TextLabel_4.Text = text.." (".. Text ..")"
-							callback(default)
-						end
 
 						TextButton_3.MouseButton1Click:Connect(function()
 							if not table.find(DropFF, Text) then
@@ -1706,14 +1706,39 @@ function library.Create(options)
 					for _, v in next,list do
 						DropF:Add(v)
 					end
-
-					callback(DropFF)
-					
-					task.spawn(function()
+					spawn(function()
 						while wait(2) do
 							UpdateTextLabel()
+							for i, v in next, ScrollingFrame_2:GetChildren() do
+								if v:IsA("Frame") then 
+									if table.find(DropFF, v.Name) then
+										TweenService:Create(
+											v,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
+										):Play()
+										TweenService:Create(
+											v.TextLabel,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{TextColor3 = Color3.fromRGB(255,255,255)}
+										):Play()
+									else
+										TweenService:Create(
+											v,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
+										):Play()
+										TweenService:Create(
+											v.TextLabel,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{TextColor3 = Color3.fromRGB(213, 213, 213)}
+										):Play()
+									end
+								end
+							end
 						end
 					end)
+					callback(DropFF)
 					return DropF
 				end
 				local DropF1 = add()
@@ -2173,7 +2198,11 @@ function library.Create(options)
 					Image.BorderSizePixel = 0
 					Image.ClipsDescendants = true
 					Image.Position = UDim2.new(0, 0, 0.311646491, 0)
-					Image.Size = UDim2.new(0.950000107, 0, 0.152440205, 27)
+					Image.Size = UDim2.new(0.950000107, 0, 0.06, 100)
+
+					if Image.Parent == par then
+						Image.Size = UDim2.new(0.950000107, 0, 0, 160)
+					end
 
 					UICorner_22.CornerRadius = UDim.new(0, 2)
 					UICorner_22.Parent = Image
@@ -2268,8 +2297,22 @@ function library.Create(options)
 					end
 					return TableImg
 				end
-				local TableImg = add();add(SearchPage)
-				return TableImg
+				local TableImg1 = add()
+				local TableImg2 = add(SearchPage)
+				local TableImg3 = {}
+				function TableImg3:UpdateImage(Value)
+					TableImg1:UpdateImage(Value)
+					TableImg2:UpdateImage(Value)
+				end
+				function TableImg3:UpdateTitle(Value)
+					TableImg1:UpdateTitle(Value)
+					TableImg2:UpdateTitle(Value)
+				end
+				function TableImg3:UpdateDis(Value)
+					TableImg1:UpdateDis(Value)
+					TableImg2:UpdateDis(Value)
+				end
+				return TableImg3
 			end
 			return library.FuncMain
 		end
