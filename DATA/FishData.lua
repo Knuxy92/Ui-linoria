@@ -31,7 +31,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Found a Meg Spine!" },
 		["SparkleColor"] = Color3.fromRGB(33, 55, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "None"
 	},
 	["Meg\'s Fang"] = {
@@ -49,7 +49,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Found a Meg Fang!" },
 		["SparkleColor"] = Color3.fromRGB(33, 55, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "None"
 	},
 	["Moon Wood"] = {
@@ -67,7 +67,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(151, 255, 212),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Inferno Wood"] = {
@@ -85,7 +85,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(255, 129, 25),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Ancient Wood"] = {
@@ -103,7 +103,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(228, 255, 140),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Void Wood"] = {
@@ -121,7 +121,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(182, 65, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Moonstone"] = {
@@ -139,7 +139,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(189, 235, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle",
 		["FromMeteor"] = true
 	},
@@ -158,7 +158,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(33, 55, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle",
 		["FromMeteor"] = true
 	},
@@ -177,7 +177,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(229, 229, 229),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle",
 		["FromMeteor"] = true
 	},
@@ -196,7 +196,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(255, 29, 29),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle",
 		["FromMeteor"] = true
 	},
@@ -215,7 +215,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(157, 92, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle",
 		["FromMeteor"] = true
 	},
@@ -234,7 +234,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ancient Isle"
 	},
 	["Solar Fragment"] = {
@@ -252,7 +252,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ancient Isle"
 	},
 	["Earth Fragment"] = {
@@ -270,7 +270,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ancient Isle"
 	},
 	["Ancient Fragment"] = {
@@ -288,7 +288,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ancient Isle"
 	},
 	["Megalodon"] = {
@@ -309,7 +309,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH The Meg!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Phantom Megalodon"] = {
@@ -330,7 +330,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH THE PHANTOM MEG!" },
 		["SparkleColor"] = Color3.fromRGB(255, 0, 0),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Ancient Megalodon"] = {
@@ -351,7 +351,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH THE ANCIENT MEG!" },
 		["SparkleColor"] = Color3.fromRGB(131, 255, 49),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Barracuda\'s Spine"] = {
@@ -369,7 +369,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Fossil Fan"] = {
@@ -387,7 +387,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Claw Gill"] = {
@@ -405,7 +405,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Spine Bone"] = {
@@ -423,7 +423,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Spine Blade"] = {
@@ -441,7 +441,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Shark Fang"] = {
@@ -459,7 +459,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Nessie\'s Spine"] = {
@@ -478,7 +478,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah a bone!" },
 		["SparkleColor"] = Color3.fromRGB(126, 124, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Spined Fin"] = {
@@ -515,7 +515,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH! ANCIENT SERPENT SPINE?!" },
 		["SparkleColor"] = Color3.fromRGB(126, 12, 12),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Ancient Serpent Skull"] = {
@@ -534,7 +534,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH ANCIENT SERPENT\'S SKULL!" },
 		["SparkleColor"] = Color3.fromRGB(126, 12, 12),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "Archeological Site"
 	},
 	["Palaeoniscus"] = {
@@ -552,7 +552,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "A Palaeoniscus!", "OMG A Palaeoniscus!", "I can\'t believe I caught a Palaeoniscus!" },
 		["SparkleColor"] = Color3.fromRGB(33, 106, 122),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ancient Archives"
 	},
 	["Birgeria"] = {
@@ -570,7 +570,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Birgeria!", "OMG A Birgeria!", "Look at this, a Birgeria!" },
 		["SparkleColor"] = Color3.fromRGB(200, 200, 200),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Archives"
 	},
 	["Phanerorhynchus"] = {
@@ -588,7 +588,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Phanerorhynchus!", "OMG A Phanerorhynchus!", "Wow, a Phanerorhynchus!" },
 		["SparkleColor"] = Color3.fromRGB(102, 51, 0),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Archives"
 	},
 	["Diplurus"] = {
@@ -606,7 +606,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Diplurus!", "OMG A Diplurus!", "I can\'t believe I caught a Diplurus!" },
 		["SparkleColor"] = Color3.fromRGB(153, 102, 0),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Archives"
 	},
 	["Lepidotes"] = {
@@ -624,7 +624,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Lepidotes!", "OMG A Lepidotes!", "I can\'t believe I caught a Lepidotes!" },
 		["SparkleColor"] = Color3.fromRGB(255, 215, 0),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Archives"
 	},
 	["Amblypterus"] = {
@@ -642,7 +642,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught an Amblypterus!", "OMG A Amblypterus!", "I can\'t believe I caught an Amblypterus!" },
 		["SparkleColor"] = Color3.fromRGB(204, 153, 0),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Archives"
 	},
 	["The Depths Key"] = {
@@ -661,7 +661,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a depths key!", "Woah, a key!!" },
 		["SparkleColor"] = Color3.fromRGB(126, 12, 12),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Vertigo"
 	},
 	["Destroyed Fossil"] = {
@@ -679,7 +679,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Oh... A Destroyed Fossil?" },
 		["SparkleColor"] = Color3.fromRGB(126, 116, 78),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "The Depths"
 	},
 	["Scrap Metal"] = {
@@ -697,7 +697,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Just a piece of scrap metal!" },
 		["SparkleColor"] = Color3.fromRGB(125, 126, 123),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "The Depths"
 	},
 	["Deep-sea Hatchetfish"] = {
@@ -715,7 +715,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Ooh, a Deep Sea Hatchetfish!" },
 		["SparkleColor"] = Color3.fromRGB(99, 97, 126),
-		["HoldAnimation"] = v1:WaitForChild("bigbasic"),
+		["HoldAnimation"] = fish:WaitForChild("bigbasic"),
 		["From"] = "The Depths"
 	},
 	["Deep-sea Dragonfish"] = {
@@ -733,7 +733,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Oh, a Deep sea Dragonfish!" },
 		["SparkleColor"] = Color3.fromRGB(73, 74, 126),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "The Depths"
 	},
 	["Luminescent Minnow"] = {
@@ -751,7 +751,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "What is that glowing fish..." },
 		["SparkleColor"] = Color3.fromRGB(41, 150, 172),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "The Depths"
 	},
 	["Frilled Shark"] = {
@@ -769,7 +769,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "That\'s a large frilled shark!" },
 		["SparkleColor"] = Color3.fromRGB(65, 93, 64),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "The Depths"
 	},
 	["Depth Octopus"] = {
@@ -787,7 +787,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah, that\'s almost transparent, what is it??" },
 		["SparkleColor"] = Color3.fromRGB(125, 126, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "The Depths"
 	},
 	["Three-eyed Fish"] = {
@@ -805,7 +805,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah! The Three Eyed Fish!" },
 		["SparkleColor"] = Color3.fromRGB(125, 126, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "The Depths"
 	},
 	["Goblin Shark"] = {
@@ -823,7 +823,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Wow, that\'s a Goblin Shark?" },
 		["SparkleColor"] = Color3.fromRGB(76, 126, 44),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Black Dragon Fish"] = {
@@ -841,7 +841,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "THE Black Dragon Fish?!" },
 		["SparkleColor"] = Color3.fromRGB(126, 59, 59),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Spider Crab"] = {
@@ -859,7 +859,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Is that a Spider.. Or a Crab??" },
 		["SparkleColor"] = Color3.fromRGB(125, 126, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "The Depths"
 	},
 	["Nautilus"] = {
@@ -878,7 +878,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Nautilus... OMG!!" },
 		["SparkleColor"] = Color3.fromRGB(203, 174, 139),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Small Spine Chimera"] = {
@@ -897,7 +897,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah, a small spine chimera!" },
 		["SparkleColor"] = Color3.fromRGB(125, 126, 123),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Ancient Eel"] = {
@@ -916,7 +916,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "A-A-Ancient Eel?!" },
 		["SparkleColor"] = Color3.fromRGB(51, 37, 126),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Mutated Shark"] = {
@@ -935,7 +935,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Does that thing really have legs?!" },
 		["SparkleColor"] = Color3.fromRGB(102, 126, 57),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Barreleye Fish"] = {
@@ -954,7 +954,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "That fish is translucent, beautiful..." },
 		["SparkleColor"] = Color3.fromRGB(91, 126, 104),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "The Depths"
 	},
 	["Sea Snake"] = {
@@ -973,7 +973,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOW! A SEA SNAKE!" },
 		["SparkleColor"] = Color3.fromRGB(126, 53, 104),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Ancient Depth Serpent"] = {
@@ -992,7 +992,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "OMG. THATS THE ANCIENT DEPTH SERPENT!!!" },
 		["SparkleColor"] = Color3.fromRGB(28, 255, 100),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "The Depths"
 	},
 	["Corsair Grouper"] = {
@@ -1010,7 +1010,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Corsair Grouper!", "Woah, a Corsair Grouper!!" },
 		["SparkleColor"] = Color3.fromRGB(125, 126, 123),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Shortfin Mako Shark"] = {
@@ -1028,7 +1028,7 @@ local FishData = {
 		["Weather"] = { "Rain" },
 		["Quips"] = { "WOAH! A SHORTFINNED MAKO!", "OMG, IS THAT A SHORTFIN MAKO?" },
 		["SparkleColor"] = Color3.fromRGB(70, 76, 126),
-		["HoldAnimation"] = v1:WaitForChild("bigbasic"),
+		["HoldAnimation"] = fish:WaitForChild("bigbasic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Galleon Goliath"] = {
@@ -1046,7 +1046,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH! A GALLEON GOLIATH!", "OMG, IS THAT A GALLEON GOLIATH?" },
 		["SparkleColor"] = Color3.fromRGB(170, 170, 127),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Buccaneer Barracuda"] = {
@@ -1064,7 +1064,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "WOAH! A BUCCANEER BARRACUDA!", "OMG, IS THAT A BUCCANEER BARRACUDA?", "NO WAY!!" },
 		["SparkleColor"] = Color3.fromRGB(85, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Scurvy Sailfish"] = {
@@ -1082,7 +1082,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Yooo, is that a Sailfish?!" },
 		["SparkleColor"] = Color3.fromRGB(0, 85, 127),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Cutlass Fish"] = {
@@ -1100,7 +1100,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Yooo, is that THE Cutlass Fish?!" },
 		["SparkleColor"] = Color3.fromRGB(0, 85, 127),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Reefrunner Snapper"] = {
@@ -1119,7 +1119,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Yooo, that\'s a Reefrunner!" },
 		["SparkleColor"] = Color3.fromRGB(246, 126, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Cursed Eel"] = {
@@ -1138,7 +1138,7 @@ local FishData = {
 		["Weather"] = { "Rain" },
 		["Quips"] = { "Cursed Eel!", "Am I gonna get shocked?!" },
 		["SparkleColor"] = Color3.fromRGB(61, 119, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Shipwreck Barracuda"] = {
@@ -1156,7 +1156,7 @@ local FishData = {
 		["Weather"] = { "Rain" },
 		["Quips"] = { "Yooo, that\'s a Shipwreck Barracuda!" },
 		["SparkleColor"] = Color3.fromRGB(255, 25, 113),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Forsaken Shores"
 	},
 	["Golden Seahorse"] = {
@@ -1174,7 +1174,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "IS THAT A GOLDEN SEAHORSE?!" },
 		["SparkleColor"] = Color3.fromRGB(243, 255, 14),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Forsaken Shores"
 	},
 	["Captain\'s Goldfish"] = {
@@ -1192,7 +1192,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "IS THAT A CAPTAIN GOLDFISH?!" },
 		["SparkleColor"] = Color3.fromRGB(243, 255, 14),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Forsaken Shores"
 	},
 	["Piranha"] = {
@@ -1216,7 +1216,7 @@ local FishData = {
 			"It bit me!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 137, 69),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle"
 	},
 	["Cladoselache"] = {
@@ -1239,7 +1239,7 @@ local FishData = {
 			"Ouu! A Cladoselache!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 137, 69),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Anomalocaris"] = {
@@ -1262,7 +1262,7 @@ local FishData = {
 			"I caught an Anomalocaris!"
 		},
 		["SparkleColor"] = Color3.fromRGB(204, 64, 80),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ancient Isle"
 	},
 	["Starfish"] = {
@@ -1285,7 +1285,7 @@ local FishData = {
 			"I caught a Starfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 177, 51),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle"
 	},
 	["Onychodus"] = {
@@ -1308,7 +1308,7 @@ local FishData = {
 			"I caught an Onychodus!"
 		},
 		["SparkleColor"] = Color3.fromRGB(82, 94, 204),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "Ancient Isle"
 	},
 	["Acanthodii"] = {
@@ -1326,7 +1326,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Ouu an Acanthodii!", "Woah, an Acanthodii!", "Acanthodiiiiiiiiiiiiiii!!!" },
 		["SparkleColor"] = Color3.fromRGB(255, 230, 190),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ancient Isle"
 	},
 	["Xiphactinus"] = {
@@ -1344,7 +1344,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Ouu a Xiphactinus!", "Woah, a Xiphactinus!", "A Xiphactinus!" },
 		["SparkleColor"] = Color3.fromRGB(96, 130, 33),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Hyneria"] = {
@@ -1362,7 +1362,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "Ouu a Hyneria!", "Woah, a Hyneria!", "Hyneria!!!" },
 		["SparkleColor"] = Color3.fromRGB(114, 227, 140),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ancient Isle"
 	},
 	["Hallucigenia"] = {
@@ -1385,7 +1385,7 @@ local FishData = {
 			"Ouu! A Hallucigenia!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 160, 160),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle"
 	},
 	["Cobia"] = {
@@ -1410,7 +1410,7 @@ local FishData = {
 			"That\'s a big Cobia!"
 		},
 		["SparkleColor"] = Color3.fromRGB(74, 84, 132),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ancient Isle"
 	},
 	["Floppy"] = {
@@ -1434,7 +1434,7 @@ local FishData = {
 			"Ouu! A Floppy!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 161, 78),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ancient Isle"
 	},
 	["Leedsichthys"] = {
@@ -1458,7 +1458,7 @@ local FishData = {
 			"This thing\'s massive!"
 		},
 		["SparkleColor"] = Color3.fromRGB(150, 229, 207),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Ginsu Shark"] = {
@@ -1483,7 +1483,7 @@ local FishData = {
 			"No way! A Ginsu Shark!"
 		},
 		["SparkleColor"] = Color3.fromRGB(129, 143, 165),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Dunkleosteus"] = {
@@ -1502,7 +1502,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah, I caught a Dunkleosteus!", "A Dunkleosteus!", "No way! A Dunkleosteus!" },
 		["SparkleColor"] = Color3.fromRGB(80, 80, 118),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Helicoprion"] = {
@@ -1526,7 +1526,7 @@ local FishData = {
 			"IT\'S A HELICOPRION!"
 		},
 		["SparkleColor"] = Color3.fromRGB(169, 225, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Mosasaurus"] = {
@@ -1551,7 +1551,7 @@ local FishData = {
 			"A DINO!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(121, 176, 91),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ancient Isle"
 	},
 	["Tire"] = {
@@ -1575,7 +1575,7 @@ local FishData = {
 			"A tire!..?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "None"
 	},
 	["Boot"] = {
@@ -1600,7 +1600,7 @@ local FishData = {
 			"Erm.. A Boot?"
 		},
 		["SparkleColor"] = Color3.fromRGB(197, 152, 80),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Driftwood"] = {
@@ -1625,7 +1625,7 @@ local FishData = {
 			"Driftwood.."
 		},
 		["SparkleColor"] = Color3.fromRGB(197, 107, 62),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Seaweed"] = {
@@ -1648,7 +1648,7 @@ local FishData = {
 			"Seaweed.."
 		},
 		["SparkleColor"] = Color3.fromRGB(197, 107, 62),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Log"] = {
@@ -1671,7 +1671,7 @@ local FishData = {
 			"A Log..?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "None"
 	},
 	["Rock"] = {
@@ -1696,7 +1696,7 @@ local FishData = {
 			"A rock.."
 		},
 		["SparkleColor"] = Color3.fromRGB(80, 80, 80),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "None"
 	},
 	["Common Crate"] = {
@@ -1721,7 +1721,7 @@ local FishData = {
 			"Who left this here?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("crate"),
+		["HoldAnimation"] = fish:WaitForChild("crate"),
 		["IsCrate"] = true,
 		["CrateType"] = "All",
 		["BaitContents"] = {
@@ -1777,7 +1777,7 @@ local FishData = {
 			"Where is this from??"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("crate"),
+		["HoldAnimation"] = fish:WaitForChild("crate"),
 		["IsCrate"] = true,
 		["CrateType"] = "FishOrCoins",
 		["FishContents"] = {
@@ -1827,7 +1827,7 @@ local FishData = {
 			"Don\'t mind if I do!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("crate"),
+		["HoldAnimation"] = fish:WaitForChild("crate"),
 		["From"] = "None",
 		["IsCrate"] = true,
 		["CrateType"] = "Fish",
@@ -1935,7 +1935,7 @@ local FishData = {
 			"A Crate full of Bait!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("crate"),
+		["HoldAnimation"] = fish:WaitForChild("crate"),
 		["From"] = "None",
 		["IsCrate"] = true,
 		["CrateType"] = "Bait",
@@ -1980,7 +1980,7 @@ local FishData = {
 			"A Crate full of Bait!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("downward"),
+		["HoldAnimation"] = fish:WaitForChild("downward"),
 		["From"] = "None",
 		["IsCrate"] = true,
 		["CrateType"] = "Bait",
@@ -2022,7 +2022,7 @@ local FishData = {
 			"Please don\'t give me Wormhole.."
 		},
 		["SparkleColor"] = Color3.fromRGB(126, 255, 216),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "None"
 	},
 	["Bone"] = {
@@ -2045,7 +2045,7 @@ local FishData = {
 			"A Bone..?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 240, 162),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Brine Pool"
 	},
 	["Gazerfish"] = {
@@ -2068,7 +2068,7 @@ local FishData = {
 			"I caught a Gazerfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 158, 73),
-		["HoldAnimation"] = v1:WaitForChild("underweight"),
+		["HoldAnimation"] = fish:WaitForChild("underweight"),
 		["From"] = "Brine Pool"
 	},
 	["Brine Shrimp"] = {
@@ -2093,7 +2093,7 @@ local FishData = {
 			"Shrimplo Dimplo!"
 		},
 		["SparkleColor"] = Color3.fromRGB(85, 255, 133),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Brine Pool"
 	},
 	["Globe Jellyfish"] = {
@@ -2111,7 +2111,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "Ouu a Globe Jellyfish!", "Oh my Globe!", "A Globe Jellyfish!" },
 		["SparkleColor"] = Color3.fromRGB(87, 232, 133),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Brine Pool"
 	},
 	["Dweller Catfish"] = {
@@ -2135,7 +2135,7 @@ local FishData = {
 			"Dweller Catfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(97, 255, 184),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Brine Pool"
 	},
 	["Eyefestation"] = {
@@ -2160,7 +2160,7 @@ local FishData = {
 			"Wait.. This looks familiar.."
 		},
 		["SparkleColor"] = Color3.fromRGB(82, 255, 137),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["HideInBestiary"] = true
 	},
 	["Brine Phantom"] = {
@@ -2179,7 +2179,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "WOAH! A BRINE PHANTOM??", "BRINE PHANTOM!!", "AHHHHHHH!!!!" },
 		["SparkleColor"] = Color3.fromRGB(82, 255, 137),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Brine Pool"
 	},
 	["Spectral Serpent"] = {
@@ -2204,7 +2204,7 @@ local FishData = {
 			"SS-S-S-SSSPEECTRAL SERPENT!!!!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(90, 255, 137),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Brine Pool"
 	},
 	["Stalactite"] = {
@@ -2229,7 +2229,7 @@ local FishData = {
 			"That was surprisingly heavy.."
 		},
 		["SparkleColor"] = Color3.fromRGB(215, 210, 255),
-		["HoldAnimation"] = v1:WaitForChild("underweight"),
+		["HoldAnimation"] = fish:WaitForChild("underweight"),
 		["From"] = "Desolate Deep"
 	},
 	["Coral Geode"] = {
@@ -2254,7 +2254,7 @@ local FishData = {
 			"What\'s this thing?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("crate"),
+		["HoldAnimation"] = fish:WaitForChild("crate"),
 		["IsCrate"] = true,
 		["CrateType"] = "All",
 		["BaitContents"] = {
@@ -2316,7 +2316,7 @@ local FishData = {
 			"Ouuu! A Horseshoe Crab!"
 		},
 		["SparkleColor"] = Color3.fromRGB(126, 103, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Desolate Deep"
 	},
 	["Slate Tuna"] = {
@@ -2341,7 +2341,7 @@ local FishData = {
 			"Slate on that thang!"
 		},
 		["SparkleColor"] = Color3.fromRGB(128, 113, 173),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Desolate Deep"
 	},
 	["Phantom Ray"] = {
@@ -2364,7 +2364,7 @@ local FishData = {
 			"It looks like an anchor!"
 		},
 		["SparkleColor"] = Color3.fromRGB(152, 148, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "Desolate Deep"
 	},
 	["Rockstar Hermit Crab"] = {
@@ -2387,7 +2387,7 @@ local FishData = {
 			"Ou! A Rockstar Hermit Crab!"
 		},
 		["SparkleColor"] = Color3.fromRGB(126, 103, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Desolate Deep"
 	},
 	["Cockatoo Squid"] = {
@@ -2405,7 +2405,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "A Cockatoo Squid!", "Ouu! A Cockatoo Squid!", "So cool!" },
 		["SparkleColor"] = Color3.fromRGB(185, 186, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Desolate Deep"
 	},
 	["Banditfish"] = {
@@ -2428,7 +2428,7 @@ local FishData = {
 			"It pickpocketed me! >:("
 		},
 		["SparkleColor"] = Color3.fromRGB(198, 157, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Desolate Deep"
 	},
 	["Midnight Axolotl"] = {
@@ -2452,7 +2452,7 @@ local FishData = {
 			"That\'s a big axolotl!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 141, 42),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["ViewportSizeOffset"] = 2,
 		["From"] = "Desolate Deep"
 	},
@@ -2481,7 +2481,7 @@ local FishData = {
 			"AHHHHHHHHHHHHHHHHHHH"
 		},
 		["SparkleColor"] = Color3.fromRGB(114, 58, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Desolate Deep"
 	},
 	["Emperor Jellyfish"] = {
@@ -2505,7 +2505,7 @@ local FishData = {
 			"IT STINGS!"
 		},
 		["SparkleColor"] = Color3.fromRGB(143, 139, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Desolate Deep"
 	},
 	["Sea Mine"] = {
@@ -2528,7 +2528,7 @@ local FishData = {
 			"Why do I hear beeping..?"
 		},
 		["SparkleColor"] = Color3.fromRGB(103, 103, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Desolate Deep"
 	},
 	["Pale Tang"] = {
@@ -2553,7 +2553,7 @@ local FishData = {
 			"Found her!.. But albino!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 187, 187),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Keepers Altar"
 	},
 	["Bluefish"] = {
@@ -2576,7 +2576,7 @@ local FishData = {
 			"Aw! I caught a Bluefish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(60, 63, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Keepers Altar"
 	},
 	["Lapisjack"] = {
@@ -2599,7 +2599,7 @@ local FishData = {
 			"Lumberjack- I mean Lapisjack!"
 		},
 		["SparkleColor"] = Color3.fromRGB(219, 219, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Keepers Altar"
 	},
 	["Keepers Guardian"] = {
@@ -2622,7 +2622,7 @@ local FishData = {
 			"What the?! A Keepers Guardian?!"
 		},
 		["SparkleColor"] = Color3.fromRGB(56, 53, 134),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Keepers Altar"
 	},
 	["Umbral Shark"] = {
@@ -2641,7 +2641,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "An Umbral Shark!", "Woah! An Umbral Shark!", "I Caught an Umbral Shark!" },
 		["SparkleColor"] = Color3.fromRGB(151, 110, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Keepers Altar"
 	},
 	["Red Snapper"] = {
@@ -2665,7 +2665,7 @@ local FishData = {
 			"Oh Snap!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 74, 74),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Moosewood"
 	},
 	["Anchovy"] = {
@@ -2683,7 +2683,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "I caught an Anchovy..", "An Anchovy!", "It really put up a battle!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Largemouth Bass"] = {
@@ -2707,7 +2707,7 @@ local FishData = {
 			"Ou! A Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(172, 255, 134),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Trout"] = {
@@ -2731,7 +2731,7 @@ local FishData = {
 			"I caught a Trout!"
 		},
 		["SparkleColor"] = Color3.fromRGB(99, 168, 94),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Bream"] = {
@@ -2755,7 +2755,7 @@ local FishData = {
 			"Hello, Bream!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 193),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Sockeye Salmon"] = {
@@ -2781,7 +2781,7 @@ local FishData = {
 			"A Salmon!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 160, 160),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Moosewood"
 	},
 	["Carp"] = {
@@ -2808,7 +2808,7 @@ local FishData = {
 			"A Carp! My skill are sharp!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 186, 125),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Moosewood"
 	},
 	["Yellowfin Tuna"] = {
@@ -2832,7 +2832,7 @@ local FishData = {
 			"What\'s up, Tuna!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 235, 135),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Moosewood"
 	},
 	["Goldfish"] = {
@@ -2856,7 +2856,7 @@ local FishData = {
 			"Aw! I caught a Goldfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 184, 69),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Snook"] = {
@@ -2879,7 +2879,7 @@ local FishData = {
 			"Look at this Snook!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 233, 125),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Moosewood"
 	},
 	["Flounder"] = {
@@ -2897,7 +2897,7 @@ local FishData = {
 		["Weather"] = { "Windy" },
 		["Quips"] = { "A Flounder!", "A Flatfish!", "I caught a Flounder!" },
 		["SparkleColor"] = Color3.fromRGB(86, 68, 57),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Eel"] = {
@@ -2922,7 +2922,7 @@ local FishData = {
 			"An Eel! Things just got REAL!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 233, 226),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Pike"] = {
@@ -2948,7 +2948,7 @@ local FishData = {
 			"That\'s a big Pike!"
 		},
 		["SparkleColor"] = Color3.fromRGB(93, 140, 109),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Moosewood"
 	},
 	["Whiptail Catfish"] = {
@@ -2972,7 +2972,7 @@ local FishData = {
 			"Holy Whip-a-moly!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 175, 117),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Moosewood"
 	},
 	["Whisker Bill"] = {
@@ -2997,7 +2997,7 @@ local FishData = {
 			"I thought they were extinct!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Moosewood"
 	},
 	["Fungal Cluster"] = {
@@ -3015,7 +3015,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Ermm..?", "Hmm..?" },
 		["SparkleColor"] = Color3.fromRGB(255, 0, 0),
-		["HoldAnimation"] = v1:WaitForChild("underweight"),
+		["HoldAnimation"] = fish:WaitForChild("underweight"),
 		["From"] = "Mushgrove"
 	},
 	["White Perch"] = {
@@ -3038,7 +3038,7 @@ local FishData = {
 			"Aww! A White Perch!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Mushgrove"
 	},
 	["Swamp Bass"] = {
@@ -3061,7 +3061,7 @@ local FishData = {
 			"Ouu! A Swamp Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(137, 255, 116),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Mushgrove"
 	},
 	["Bowfin"] = {
@@ -3079,7 +3079,7 @@ local FishData = {
 		["Weather"] = { "Rain" },
 		["Quips"] = { "A Mudfish!", "Ouu, A Mudfish!", "I caught a Mudfish!" },
 		["SparkleColor"] = Color3.fromRGB(189, 125, 95),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Mushgrove"
 	},
 	["Grey Carp"] = {
@@ -3105,7 +3105,7 @@ local FishData = {
 			"Woah! Grey Carp!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Mushgrove"
 	},
 	["Swamp Scallop"] = {
@@ -3129,7 +3129,7 @@ local FishData = {
 			"Ou! A Swamp Scallop!"
 		},
 		["SparkleColor"] = Color3.fromRGB(142, 185, 78),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Mushgrove"
 	},
 	["Mushgrove Crab"] = {
@@ -3153,7 +3153,7 @@ local FishData = {
 			"Ou! A Mushgrove Crab!"
 		},
 		["SparkleColor"] = Color3.fromRGB(185, 56, 52),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Mushgrove"
 	},
 	["Marsh Gar"] = {
@@ -3176,7 +3176,7 @@ local FishData = {
 			"Oh my Gar!"
 		},
 		["SparkleColor"] = Color3.fromRGB(180, 36, 36),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Mushgrove"
 	},
 	["Catfish"] = {
@@ -3200,7 +3200,7 @@ local FishData = {
 			"I caught a Catfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Mushgrove"
 	},
 	["Alligator"] = {
@@ -3224,7 +3224,7 @@ local FishData = {
 			"WHAT????"
 		},
 		["SparkleColor"] = Color3.fromRGB(153, 255, 116),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "Mushgrove"
 	},
 	["Handfish"] = {
@@ -3249,7 +3249,7 @@ local FishData = {
 			"Kinda weird lookin\'..."
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 234, 181),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Mushgrove"
 	},
 	["Sea Bass"] = {
@@ -3272,7 +3272,7 @@ local FishData = {
 			"Ouu! A Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(203, 203, 203),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Porgy"] = {
@@ -3296,7 +3296,7 @@ local FishData = {
 			"I caught a Porgy!"
 		},
 		["SparkleColor"] = Color3.fromRGB(248, 255, 169),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Mullet"] = {
@@ -3320,7 +3320,7 @@ local FishData = {
 			"I caught an Outdated Hairstyle!"
 		},
 		["SparkleColor"] = Color3.fromRGB(183, 249, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Sardine"] = {
@@ -3338,7 +3338,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "I caught a Sardine!", "Ouu! A Sardine!", "A Sardine!" },
 		["SparkleColor"] = Color3.fromRGB(185, 185, 185),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Mackerel"] = {
@@ -3363,7 +3363,7 @@ local FishData = {
 			"Holy Mackerel!"
 		},
 		["SparkleColor"] = Color3.fromRGB(207, 207, 207),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Haddock"] = {
@@ -3381,7 +3381,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Haddock!", "Woah, a Haddock!!" },
 		["SparkleColor"] = Color3.fromRGB(227, 227, 227),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Shrimp"] = {
@@ -3405,7 +3405,7 @@ local FishData = {
 			"Ou! A Shrimpy!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 107, 96),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Sand Dollar"] = {
@@ -3429,7 +3429,7 @@ local FishData = {
 			"Ou! A Sand Dollar!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 227, 143),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Mussel"] = {
@@ -3453,7 +3453,7 @@ local FishData = {
 			"Ou! A Mussel!"
 		},
 		["SparkleColor"] = Color3.fromRGB(53, 53, 89),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Barracuda"] = {
@@ -3476,7 +3476,7 @@ local FishData = {
 			"!!!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(117, 141, 121),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Cod"] = {
@@ -3500,7 +3500,7 @@ local FishData = {
 			"What\'s up, Coddy!"
 		},
 		["SparkleColor"] = Color3.fromRGB(207, 158, 139),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Salmon"] = {
@@ -3525,7 +3525,7 @@ local FishData = {
 			"A Salmon!!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(65, 166, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Amberjack"] = {
@@ -3548,7 +3548,7 @@ local FishData = {
 			"Lumberjack- I mean Amberjack!"
 		},
 		["SparkleColor"] = Color3.fromRGB(219, 219, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Crab"] = {
@@ -3572,7 +3572,7 @@ local FishData = {
 			"Ou! A Crab!"
 		},
 		["SparkleColor"] = Color3.fromRGB(209, 90, 90),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Scallop"] = {
@@ -3596,7 +3596,7 @@ local FishData = {
 			"Ou! A Scallop!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 195, 135),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Prawn"] = {
@@ -3620,7 +3620,7 @@ local FishData = {
 			"Ou! A Prawn!"
 		},
 		["SparkleColor"] = Color3.fromRGB(165, 255, 248),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Oyster"] = {
@@ -3644,7 +3644,7 @@ local FishData = {
 			"Ou! An Oyster!"
 		},
 		["SparkleColor"] = Color3.fromRGB(217, 194, 168),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Nurse Shark"] = {
@@ -3662,7 +3662,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "A Nurse Shark!", "Woah! A Nurse Shark!", "I Caught a Nurse Shark!" },
 		["SparkleColor"] = Color3.fromRGB(255, 152, 152),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Lobster"] = {
@@ -3686,7 +3686,7 @@ local FishData = {
 			"Ou! A Lobster!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 57, 57),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Coelacanth"] = {
@@ -3709,7 +3709,7 @@ local FishData = {
 			"Nice! It\'s a Coelacanth!"
 		},
 		["SparkleColor"] = Color3.fromRGB(76, 76, 76),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Bluefin Tuna"] = {
@@ -3733,7 +3733,7 @@ local FishData = {
 			"What\'s up, Tuna!"
 		},
 		["SparkleColor"] = Color3.fromRGB(125, 210, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean"
 	},
 	["Halibut"] = {
@@ -3756,7 +3756,7 @@ local FishData = {
 			"Ou! A Halibut!"
 		},
 		["SparkleColor"] = Color3.fromRGB(207, 129, 93),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Stingray"] = {
@@ -3774,7 +3774,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "I caught a Stingray!", "Woah.. a Stingray!", "It stung me! Yeeowch!" },
 		["SparkleColor"] = Color3.fromRGB(180, 87, 50),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Sea Urchin"] = {
@@ -3792,7 +3792,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "A Sea Urchin!", "I caught a Sea Urchin!", "Woah, an Urchin!" },
 		["SparkleColor"] = Color3.fromRGB(34, 32, 42),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Anglerfish"] = {
@@ -3810,7 +3810,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "Woah, an Anglerfish!", "No way! An anglerfish!", "I caught an Anglerfish!" },
 		["SparkleColor"] = Color3.fromRGB(182, 25, 25),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ocean"
 	},
 	["Pufferfish"] = {
@@ -3834,7 +3834,7 @@ local FishData = {
 			"Augh..."
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 227, 15),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ocean"
 	},
 	["Swordfish"] = {
@@ -3858,7 +3858,7 @@ local FishData = {
 			"A Fish Sword..! A Fish Sword!"
 		},
 		["SparkleColor"] = Color3.fromRGB(93, 128, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["ViewportSizeOffset"] = 0.9,
 		["From"] = "Ocean"
 	},
@@ -3882,7 +3882,7 @@ local FishData = {
 			"I caught a Sailfish!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 242, 94),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["ViewportSizeOffset"] = 0.9,
 		["From"] = "Ocean"
 	},
@@ -3907,7 +3907,7 @@ local FishData = {
 			"I caught a Cookiecutter Shark!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 103, 103),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Bull Shark"] = {
@@ -3925,7 +3925,7 @@ local FishData = {
 		["Weather"] = { "Rain", "Foggy" },
 		["Quips"] = { "A Bull Shark!", "Thats some Bull Shark!", "I caught a Bull Shark!" },
 		["SparkleColor"] = Color3.fromRGB(255, 245, 197),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "Ocean"
 	},
 	["Moonfish"] = {
@@ -3952,7 +3952,7 @@ local FishData = {
 			"A Moonfish!!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 122, 70),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean"
 	},
 	["Crown Bass"] = {
@@ -3976,7 +3976,7 @@ local FishData = {
 			"Ouu! A Crown Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(203, 163, 70),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Flying Fish"] = {
@@ -4000,7 +4000,7 @@ local FishData = {
 			"Ouu! A Flying Fish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(172, 209, 255),
-		["HoldAnimation"] = v1:WaitForChild("underweight"),
+		["HoldAnimation"] = fish:WaitForChild("underweight"),
 		["From"] = "Ocean"
 	},
 	["Rabbitfish"] = {
@@ -4019,7 +4019,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah!! A Rabbitfish!", "A Rabbit!!", "I caught a Rabbitfish!" },
 		["SparkleColor"] = Color3.fromRGB(204, 142, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Dolphin"] = {
@@ -4038,7 +4038,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "I caught a Dolphin!", "It\'s a Dolphin!", "A DOLPHINN!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavybasic"),
+		["HoldAnimation"] = fish:WaitForChild("heavybasic"),
 		["From"] = "Ocean"
 	},
 	["Sawfish"] = {
@@ -4061,7 +4061,7 @@ local FishData = {
 			"Woah, a Sawfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(161, 199, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean"
 	},
 	["Oarfish"] = {
@@ -4085,7 +4085,7 @@ local FishData = {
 			"Oar Oar Oar Oar Oar"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 51, 51),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Ocean"
 	},
 	["Great White Shark"] = {
@@ -4109,7 +4109,7 @@ local FishData = {
 			"I CAN\'T FEEL MY SPINE!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(93, 123, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean",
 		["Shark"] = true
 	},
@@ -4136,7 +4136,7 @@ local FishData = {
 			"Comically large hammer head!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean",
 		["Shark"] = true
 	},
@@ -4161,7 +4161,7 @@ local FishData = {
 			"NO WAY! A Mythic Fish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 199, 32),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Ocean"
 	},
 	["Sea Pickle"] = {
@@ -4179,7 +4179,7 @@ local FishData = {
 		["Weather"] = { "Clear", "Cloudy" },
 		["Quips"] = { "A SEA PICKLE!!", "I CAUGHT A SEA PICKLE!", "A Sea pickle!" },
 		["SparkleColor"] = Color3.fromRGB(121, 255, 80),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Ocean"
 	},
 	["Colossal Squid"] = {
@@ -4198,7 +4198,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "WOAH. A COLOSSAL SQUID!!", "MY BACCKK", "I CAN\'T BELIEVE IT! COLOSSAL SQUID!" },
 		["SparkleColor"] = Color3.fromRGB(255, 82, 82),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean"
 	},
 	["Whale Shark"] = {
@@ -4222,7 +4222,7 @@ local FishData = {
 			"WUHWUHWUHWUHWUHWHALE SHARK??!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(187, 190, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Ocean",
 		["Shark"] = true
 	},
@@ -4241,7 +4241,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Chub!", "Woah, a Chub!!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Perch"] = {
@@ -4264,7 +4264,7 @@ local FishData = {
 			"Aww! A Perch!"
 		},
 		["SparkleColor"] = Color3.fromRGB(119, 163, 77),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Minnow"] = {
@@ -4288,7 +4288,7 @@ local FishData = {
 			"Aw! I caught a Baitfish!"
 		},
 		["SparkleColor"] = Color3.fromRGB(161, 161, 161),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Pearl"] = {
@@ -4306,7 +4306,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(255, 239, 231),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4330,7 +4330,7 @@ local FishData = {
 			"Woah.. Cool ears!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 60, 60),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Clownfish"] = {
@@ -4355,7 +4355,7 @@ local FishData = {
 			"What kind of circus is this?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 167, 43),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Blue Tang"] = {
@@ -4380,7 +4380,7 @@ local FishData = {
 			"Found her!"
 		},
 		["SparkleColor"] = Color3.fromRGB(48, 69, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Butterflyfish"] = {
@@ -4398,7 +4398,7 @@ local FishData = {
 		["Weather"] = { "Clear", "Foggy" },
 		["Quips"] = { "Ouu a Butterflyfish!", "Woah, a Butterflyfish!", "It\'s so pretty!" },
 		["SparkleColor"] = Color3.fromRGB(255, 249, 80),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Gilded Pearl"] = {
@@ -4416,7 +4416,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(255, 213, 108),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4435,7 +4435,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "Ouu an Angelfish!", "Woah, an Angelfish!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Squid"] = {
@@ -4453,7 +4453,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "A Squid!", "A cute Squid!", "I caught a Squid!" },
 		["SparkleColor"] = Color3.fromRGB(255, 173, 102),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Ribbon Eel"] = {
@@ -4477,7 +4477,7 @@ local FishData = {
 			"H-eel-lo! Ribbon Eel!"
 		},
 		["SparkleColor"] = Color3.fromRGB(70, 141, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Roslit"
 	},
 	["Yellow Boxfish"] = {
@@ -4495,7 +4495,7 @@ local FishData = {
 		["Weather"] = { "Rain" },
 		["Quips"] = { "Ouu a Yellow Boxfish!", "Woah, a Yellow Boxfish!" },
 		["SparkleColor"] = Color3.fromRGB(255, 222, 57),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Clam"] = {
@@ -4518,7 +4518,7 @@ local FishData = {
 			"Wan go clam?"
 		},
 		["SparkleColor"] = Color3.fromRGB(212, 126, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit"
 	},
 	["Rose Pearl"] = {
@@ -4536,7 +4536,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(255, 201, 238),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4555,7 +4555,7 @@ local FishData = {
 		["Weather"] = { "Rain", "Foggy" },
 		["Quips"] = { "An Arapaima!", "I caught an Arapaima!", "Woah, an Arapaima!" },
 		["SparkleColor"] = Color3.fromRGB(154, 39, 39),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Roslit"
 	},
 	["Alligator Gar"] = {
@@ -4580,7 +4580,7 @@ local FishData = {
 			"Oh my Gar!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Roslit"
 	},
 	["Suckermouth Catfish"] = {
@@ -4598,7 +4598,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "A Suckermouth Catfish!", "I caught a Catfish!", "Woah, a Suckermouth!" },
 		["SparkleColor"] = Color3.fromRGB(158, 128, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Roslit"
 	},
 	["Mauve Pearl"] = {
@@ -4616,7 +4616,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(197, 178, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4636,7 +4636,7 @@ local FishData = {
 		["Weather"] = { "Rain" },
 		["Quips"] = { "Woah, I caught a Dumbo!", "A Dumbo Octopus!", "No way! A Dumbo Octupus!" },
 		["SparkleColor"] = Color3.fromRGB(255, 142, 90),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Roslit"
 	},
 	["Axolotl"] = {
@@ -4660,7 +4660,7 @@ local FishData = {
 			"That\'s a cute axolotl!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 131, 131),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["ViewportSizeOffset"] = 2,
 		["From"] = "Roslit"
 	},
@@ -4679,7 +4679,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(82, 39, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4704,7 +4704,7 @@ local FishData = {
 			"Hol-ey Mol-ray!"
 		},
 		["SparkleColor"] = Color3.fromRGB(87, 118, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Roslit"
 	},
 	["Aurora Pearl"] = {
@@ -4722,7 +4722,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(106, 255, 188),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4741,7 +4741,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = {},
 		["SparkleColor"] = Color3.fromRGB(255, 228, 130),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit",
 		["IsPearl"] = true
 	},
@@ -4767,7 +4767,7 @@ local FishData = {
 			"Basalt.."
 		},
 		["SparkleColor"] = Color3.fromRGB(59, 59, 59),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit Volcano"
 	},
 	["Volcanic Geode"] = {
@@ -4792,7 +4792,7 @@ local FishData = {
 			"What\'s this thing?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("crate"),
+		["HoldAnimation"] = fish:WaitForChild("crate"),
 		["IsCrate"] = true,
 		["CrateType"] = "All",
 		["BaitContents"] = {
@@ -4856,7 +4856,7 @@ local FishData = {
 			"Found her!.. But evil!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 158, 73),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit Volcano"
 	},
 	["Ember Snapper"] = {
@@ -4880,7 +4880,7 @@ local FishData = {
 			"It burns!"
 		},
 		["SparkleColor"] = Color3.fromRGB(191, 39, 25),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Roslit Volcano"
 	},
 	["Ember Perch"] = {
@@ -4904,7 +4904,7 @@ local FishData = {
 			"Woah! An Ember Perch!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 19, 19),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Roslit Volcano"
 	},
 	["Pyrogrub"] = {
@@ -4928,7 +4928,7 @@ local FishData = {
 			"What the?!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 151, 46),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Roslit Volcano"
 	},
 	["Obsidian Salmon"] = {
@@ -4954,7 +4954,7 @@ local FishData = {
 			"A Salmon!..? Made of obsidian?"
 		},
 		["SparkleColor"] = Color3.fromRGB(102, 0, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Roslit Volcano"
 	},
 	["Obsidian Swordfish"] = {
@@ -4978,7 +4978,7 @@ local FishData = {
 			"I caught an Obsidian Swordfish!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(176, 79, 255),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["ViewportSizeOffset"] = 0.9,
 		["From"] = "Roslit Volcano"
 	},
@@ -5003,7 +5003,7 @@ local FishData = {
 			"I caught a Molten Banshee!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 92, 28),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Roslit Volcano"
 	},
 	["Ice"] = {
@@ -5029,7 +5029,7 @@ local FishData = {
 			"It\'s not a popsicle, but it will do!"
 		},
 		["SparkleColor"] = Color3.fromRGB(171, 255, 245),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Bluegill"] = {
@@ -5052,7 +5052,7 @@ local FishData = {
 			"Lovely, a Bluegill!"
 		},
 		["SparkleColor"] = Color3.fromRGB(149, 255, 188),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Grayling"] = {
@@ -5070,7 +5070,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "A Grayling!", "I caught a Grayling!", "Oh, a Grayling!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Red Drum"] = {
@@ -5094,7 +5094,7 @@ local FishData = {
 			"All I see is Red Drum."
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 49, 49),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Herring"] = {
@@ -5112,7 +5112,7 @@ local FishData = {
 		["Weather"] = { "Clear", "Windy" },
 		["Quips"] = { "A Herring!", "I caught a Herring!", "Oh, a Herring!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Pollock"] = {
@@ -5135,7 +5135,7 @@ local FishData = {
 			"Look! A Pollock!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Arctic Char"] = {
@@ -5158,7 +5158,7 @@ local FishData = {
 			"It\'s an Arctic Char!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 83, 83),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Burbot"] = {
@@ -5176,7 +5176,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "A Burbot!", "I caught a Burbot!", "Oh, a Burbot!" },
 		["SparkleColor"] = Color3.fromRGB(194, 255, 129),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Blackfish"] = {
@@ -5194,7 +5194,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "A Blackfish!", "I caught a Blackfish!", "Oh, a Blackfish!" },
 		["SparkleColor"] = Color3.fromRGB(113, 113, 113),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Skipjack Tuna"] = {
@@ -5217,7 +5217,7 @@ local FishData = {
 			"I caught a Skipjack Tuna!"
 		},
 		["SparkleColor"] = Color3.fromRGB(162, 174, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Glacier Pike"] = {
@@ -5243,7 +5243,7 @@ local FishData = {
 			"That\'s a big Glacier Pike!"
 		},
 		["SparkleColor"] = Color3.fromRGB(93, 140, 109),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Lingcod"] = {
@@ -5267,7 +5267,7 @@ local FishData = {
 			"It\'s a Lingcod!"
 		},
 		["SparkleColor"] = Color3.fromRGB(76, 115, 55),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Sturgeon"] = {
@@ -5291,7 +5291,7 @@ local FishData = {
 			"Woahh a Sturgeon!"
 		},
 		["SparkleColor"] = Color3.fromRGB(232, 232, 232),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Pond Emperor"] = {
@@ -5315,7 +5315,7 @@ local FishData = {
 			"I caught a Pond Emperor!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(136, 39, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Ringle"] = {
@@ -5339,7 +5339,7 @@ local FishData = {
 			"Woah, a Ringle!"
 		},
 		["SparkleColor"] = Color3.fromRGB(87, 224, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Snowcap"
 	},
 	["Glacierfish"] = {
@@ -5363,7 +5363,7 @@ local FishData = {
 			"It\'s beautiful..!"
 		},
 		["SparkleColor"] = Color3.fromRGB(161, 233, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Snowcap"
 	},
 	["Sweetfish"] = {
@@ -5386,7 +5386,7 @@ local FishData = {
 			"Hope it\'s not artificially sweet!"
 		},
 		["SparkleColor"] = Color3.fromRGB(157, 255, 96),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Sunstone"
 	},
 	["Glassfish"] = {
@@ -5404,7 +5404,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "Ouu a Glassfish!", "Woah, a Glassfish!", "I can barely see it!" },
 		["SparkleColor"] = Color3.fromRGB(126, 126, 126),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Sunstone"
 	},
 	["Longtail Bass"] = {
@@ -5422,7 +5422,7 @@ local FishData = {
 		["Weather"] = { "Foggy" },
 		["Quips"] = { "A Longtail Bass!", "I caught a Longtail Bass!" },
 		["SparkleColor"] = Color3.fromRGB(255, 89, 89),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Sunstone"
 	},
 	["Red Tang"] = {
@@ -5447,7 +5447,7 @@ local FishData = {
 			"Found her!.. But red!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 82, 82),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Sunstone"
 	},
 	["Chinfish"] = {
@@ -5471,7 +5471,7 @@ local FishData = {
 			"It\'s mewing!?"
 		},
 		["SparkleColor"] = Color3.fromRGB(214, 214, 214),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Sunstone"
 	},
 	["Trumpetfish"] = {
@@ -5494,7 +5494,7 @@ local FishData = {
 			"Holy.. This thing is weird.."
 		},
 		["SparkleColor"] = Color3.fromRGB(247, 255, 98),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Sunstone"
 	},
 	["Mahi Mahi"] = {
@@ -5512,7 +5512,7 @@ local FishData = {
 		["Weather"] = { "Clear", "Windy" },
 		["Quips"] = { "I caught a Mahi Mahi!", "Woah, a Mahi Mahi!!", "It\'s a Mahi Mahi!" },
 		["SparkleColor"] = Color3.fromRGB(255, 249, 89),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Sunstone"
 	},
 	["Napoleonfish"] = {
@@ -5530,7 +5530,7 @@ local FishData = {
 		["Weather"] = { "Windy" },
 		["Quips"] = { "A Napoleonfish!", "I caught a Napoleonfish!", "Woahh, a Napoleonfish!" },
 		["SparkleColor"] = Color3.fromRGB(90, 255, 195),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Sunstone"
 	},
 	["Sunfish"] = {
@@ -5559,7 +5559,7 @@ local FishData = {
 			"MOLA MOLA!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 232, 99),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Sunstone"
 	},
 	["Wiifish"] = {
@@ -5583,7 +5583,7 @@ local FishData = {
 			"This brings me back!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 136, 51),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Sunstone"
 	},
 	["Voltfish"] = {
@@ -5607,7 +5607,7 @@ local FishData = {
 			"It zapped me!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 154, 71),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Sunstone"
 	},
 	["Smallmouth Bass"] = {
@@ -5630,7 +5630,7 @@ local FishData = {
 			"Ouu! A Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(127, 255, 88),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["Gudgeon"] = {
@@ -5648,7 +5648,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I can barely see it!", "A Gudgeon.!", "Oh, cool!" },
 		["SparkleColor"] = Color3.fromRGB(216, 251, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["White Bass"] = {
@@ -5671,7 +5671,7 @@ local FishData = {
 			"Ouu! A Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["Walleye"] = {
@@ -5689,7 +5689,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah! A Walleye!", "I caught a Walleye!", "Lovely, a Walleye!" },
 		["SparkleColor"] = Color3.fromRGB(113, 188, 96),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["Redeye Bass"] = {
@@ -5712,7 +5712,7 @@ local FishData = {
 			"Ouu! A Redeye Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 29, 29),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["Chinook Salmon"] = {
@@ -5735,7 +5735,7 @@ local FishData = {
 			"Woah, a King Salmon!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Terrapin"
 	},
 	["King Oyster"] = {
@@ -5759,7 +5759,7 @@ local FishData = {
 			"Ou! A King Oyster!"
 		},
 		["SparkleColor"] = Color3.fromRGB(217, 215, 151),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["Golden Smallmouth Bass"] = {
@@ -5785,7 +5785,7 @@ local FishData = {
 			"So shiny! A Golden Bass!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 205, 3),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Terrapin"
 	},
 	["Olm"] = {
@@ -5812,7 +5812,7 @@ local FishData = {
 			"It looks like a recorder"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 178, 178),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["ViewportSizeOffset"] = 2,
 		["From"] = "Terrapin"
 	},
@@ -5837,7 +5837,7 @@ local FishData = {
 			"I caught a Sea Turtle!"
 		},
 		["SparkleColor"] = Color3.fromRGB(160, 255, 83),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Terrapin"
 	},
 	["Spiderfish"] = {
@@ -5855,7 +5855,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "I caught a Spiderfish!", "Ouu! A Spiderfish!", "A Spiderfish!" },
 		["SparkleColor"] = Color3.fromRGB(53, 60, 79),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Vertigo"
 	},
 	["Night Shrimp"] = {
@@ -5879,7 +5879,7 @@ local FishData = {
 			"Ou! A Night Shrimpy!"
 		},
 		["SparkleColor"] = Color3.fromRGB(49, 51, 74),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["From"] = "Vertigo"
 	},
 	["Twilight Eel"] = {
@@ -5897,7 +5897,7 @@ local FishData = {
 		["Weather"] = { "None" },
 		["Quips"] = { "Woah, a Twilight Eel!", "I caught an Eel!", "It looks like a tadpole!" },
 		["SparkleColor"] = Color3.fromRGB(128, 255, 121),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Vertigo"
 	},
 	["Fangborn Gar"] = {
@@ -5920,7 +5920,7 @@ local FishData = {
 			"Oh my Gar!"
 		},
 		["SparkleColor"] = Color3.fromRGB(32, 26, 48),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Vertigo"
 	},
 	["Abyssacuda"] = {
@@ -5943,7 +5943,7 @@ local FishData = {
 			"Abyssacudaaaaa!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(87, 77, 116),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Vertigo"
 	},
 	["Voidfin Mahi"] = {
@@ -5961,7 +5961,7 @@ local FishData = {
 		["Weather"] = { "Clear", "Windy" },
 		["Quips"] = { "I caught a Voidfin Mahi!", "Woah, a Voidfin Mahi!!", "It\'s a Voidfin Mahi!" },
 		["SparkleColor"] = Color3.fromRGB(83, 67, 106),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["From"] = "Vertigo"
 	},
 	["Rubber Ducky"] = {
@@ -5986,7 +5986,7 @@ local FishData = {
 			"How did this get down here..?"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 234, 115),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["From"] = "Vertigo"
 	},
 	["Isonade"] = {
@@ -6011,7 +6011,7 @@ local FishData = {
 			"THESE EXIST?"
 		},
 		["SparkleColor"] = Color3.fromRGB(47, 29, 106),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["From"] = "Vertigo"
 	},
 	["Ghoulfish"] = {
@@ -6037,7 +6037,7 @@ local FishData = {
 			"\240\159\145\187\240\159\145\187\240\159\145\187"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["FromLimited"] = "FischFright"
 	},
 	["Lurkerfish"] = {
@@ -6061,7 +6061,7 @@ local FishData = {
 			"I\'m lurking..."
 		},
 		["SparkleColor"] = Color3.fromRGB(140, 255, 176),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["FromLimited"] = "FischFright"
 	},
 	["Candy Fish"] = {
@@ -6079,7 +6079,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "Woah, a Candy Fisch!", "No way! A Candy Fisch!", "I caught a Candy Fisch!" },
 		["SparkleColor"] = Color3.fromRGB(255, 51, 51),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["FromLimited"] = "FischFright"
 	},
 	["Zombiefish"] = {
@@ -6102,7 +6102,7 @@ local FishData = {
 			"Rahh! I\'m gonna eat your brains!"
 		},
 		["SparkleColor"] = Color3.fromRGB(255, 51, 51),
-		["HoldAnimation"] = v1:WaitForChild("small"),
+		["HoldAnimation"] = fish:WaitForChild("small"),
 		["FromLimited"] = "FischFright"
 	},
 	["Skelefish"] = {
@@ -6120,7 +6120,7 @@ local FishData = {
 		["Weather"] = { "Clear" },
 		["Quips"] = { "Woah, a Skelefish!", "No way! A Skelefish!", "I caught a Skelefish!" },
 		["SparkleColor"] = Color3.fromRGB(255, 255, 255),
-		["HoldAnimation"] = v1:WaitForChild("tiny"),
+		["HoldAnimation"] = fish:WaitForChild("tiny"),
 		["FromLimited"] = "FischFright"
 	},
 	["Nessie"] = {
@@ -6144,7 +6144,7 @@ local FishData = {
 			"I DIDN\'T THINK IT WAS REAL!!"
 		},
 		["SparkleColor"] = Color3.fromRGB(129, 255, 181),
-		["HoldAnimation"] = v1:WaitForChild("heavy"),
+		["HoldAnimation"] = fish:WaitForChild("heavy"),
 		["FromLimited"] = "FischFright"
 	},
 	["Turkey"] = {
@@ -6168,8 +6168,7 @@ local FishData = {
 			"Woah, A Turkey!"
 		},
 		["SparkleColor"] = Color3.fromRGB(208, 104, 135),
-		["HoldAnimation"] = v1:WaitForChild("basic"),
+		["HoldAnimation"] = fish:WaitForChild("basic"),
 		["FromLimited"] = "Fischgiving"
 	},
 }
-
