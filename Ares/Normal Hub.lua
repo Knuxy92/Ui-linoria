@@ -23,6 +23,9 @@ function dragify(Frame, object)
 			return
 		end
 		local Delta = input.Position - dragStart
+		Delta = input.Position - dragStart
+		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(object, TweenInfo.new(dragSpeed), {Position = Position}):Play()
 	end
 
 	Frame.InputBegan:Connect(function(input)
