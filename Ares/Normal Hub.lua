@@ -23,16 +23,6 @@ function dragify(Frame, object)
 			return
 		end
 		local Delta = input.Position - dragStart
-		if _G['ทำให้ UI ไม่ออก ขอบ'] then
-			Delta = Vector2.new(math.clamp(startPos.X.Offset + Delta.X, -DDX, DDX), math.clamp(startPos.Y.Offset +  Delta.Y, -DDY, DDY))
-			local Position = UDim2.new(startPos.X.Scale, Delta.X, startPos.Y.Scale, Delta.Y)
-			TweenService:Create(object, TweenInfo.new(dragSpeed), {Position = Position}):Play()
-		else
-			Delta = input.Position - dragStart
-			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-			game:GetService("TweenService"):Create(object, TweenInfo.new(dragSpeed), {Position = Position}):Play()
-		end
-
 	end
 
 	Frame.InputBegan:Connect(function(input)
@@ -475,7 +465,7 @@ function library.Create(options)
 			end
 		end
 	end
-	if _G.ToggleUi then
+	if UserInputService.TouchEnabled then
 		local CloseUI = Instance.new("ScreenGui")
 		local CloseUIMain = Instance.new("Frame")
 		local Logo = Instance.new("ImageLabel")
@@ -820,7 +810,7 @@ function library.Create(options)
 			end
 			library.FuncMain.CreateToggle = function(options, Lock)
 				local ToggleTable = {}
-				local Name = options.Name;wait()
+				local Name = options.Name
 				local default = options.Value
 				local Dis = options.Dis
 				local callback = options.Callback or function() end
@@ -1158,7 +1148,7 @@ function library.Create(options)
 			end
 			library.FuncMain.CreateButton = function(options)
 				local function add(par)
-					local Name = options.Name or "Button";wait()
+					local Name = options.Name or "Button"
 					local callback = options.Callback or function() end
 
 					local Button = Instance.new("Frame")
@@ -1229,7 +1219,7 @@ function library.Create(options)
 			library.FuncMain.CreateDropdown = function(options)
 				local default = options.Value or ""
 				local function add(par)
-					local text = options.Name;wait()
+					local text = options.Name
 					local list = options.List
 					local callback = options.Callback
 
@@ -1482,7 +1472,7 @@ function library.Create(options)
 			end
 			library.FuncMain.CreateMultiDropdown = function(options)
 				local drop2
-				local text = options.Name;wait()
+				local text = options.Name
 				local default = options.Value or {""}
 				local list = options.List
 				local callback = options.Callback
@@ -1971,7 +1961,7 @@ function library.Create(options)
 
 			function library.FuncMain.CreateInput(options)
 				local function add(par)
-					local Name = options.Name;wait()
+					local Name = options.Name
 					local default = options.Value or ''
 					local Placeholder = options.Placeholder
 					local callback = options.Callback
