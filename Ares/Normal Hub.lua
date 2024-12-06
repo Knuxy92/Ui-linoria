@@ -1329,102 +1329,155 @@ function library.Create(options)
 
 					TextLabel_4.Text = text.." (".. ' None ' ..")"
 					function DropF:Add(Text)
-						local Button_2 = Instance.new("Frame")
-						local UICorner_10 = Instance.new("UICorner")
-						local TextButton_3 = Instance.new("TextButton")
-						local TextLabel_5 = Instance.new("TextLabel")
+						if Text == "Search" then
+							local Button_2 = Instance.new("Frame")
+							local UICorner_10 = Instance.new("UICorner")
+							local TextLabel_5 = Instance.new("TextBox")
 
-						Button_2.Name = "Button"
-						Button_2.Parent = ScrollingFrame_2
-						Button_2.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
-						Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						Button_2.BorderSizePixel = 0
-						Button_2.Position = UDim2.new(0, 0, 0.270586133, 0)
-						Button_2.Size = UDim2.new(0.949999988, 0, 0, 25)
+							Button_2.Name = "Search"
+							Button_2.Parent = ScrollingFrame_2
+							Button_2.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+							Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							Button_2.BorderSizePixel = 0
+							Button_2.Position = UDim2.new(0, 0, 0.270586133, 0)
+							Button_2.Size = UDim2.new(0.949999988, 0, 0, 25)
 
-						UICorner_10.CornerRadius = UDim.new(0, 2)
-						UICorner_10.Parent = Button_2
+							UICorner_10.CornerRadius = UDim.new(0, 2)
+							UICorner_10.Parent = Button_2
 
-						TextButton_3.Parent = Button_2
-						TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						TextButton_3.BackgroundTransparency = 1.000
-						TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						TextButton_3.BorderSizePixel = 0
-						TextButton_3.Size = UDim2.new(1, 0, 1, 0)
-						TextButton_3.Font = Enum.Font.SourceSans
-						TextButton_3.Text = ""
-						TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-						TextButton_3.TextSize = 14.000
+							TextLabel_5.Parent = Button_2
+							TextLabel_5.Name = "TextLabel"
+							TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TextLabel_5.BackgroundTransparency = 1.000
+							TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							TextLabel_5.BorderSizePixel = 0
+							TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+							TextLabel_5.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+							TextLabel_5.Text = Text
+							TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
+							TextLabel_5.TextSize = TextSize
+							TextLabel_5.PlaceholderText = "Search"
+							TextLabel_5.Changed:Connect(function()
+								if TextLabel_5.Text ~= "" and TextLabel_5.Text ~= "Search" then
+									local InputText = string.upper(TextLabel_5.Text)
+									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
+										if button:FindFirstChild("TextLabel") then
+											if button:FindFirstChild("TextLabel").Text:find(string.upper(TextLabel_5.Text)) then
+												button.Visible = true
+											else
+												if button.Name ~= "Search" then
+													button.Visible = false
+												end
 
-						TextLabel_5.Parent = Button_2
-						TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						TextLabel_5.BackgroundTransparency = 1.000
-						TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						TextLabel_5.BorderSizePixel = 0
-						TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
-						TextLabel_5.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-						TextLabel_5.Text = Text
-						TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
-						TextLabel_5.TextSize = TextSize
-
-						if TextLabel_5.Text == default then
-							for i, v in next, ScrollingFrame_2:GetChildren() do
-								if v:IsA("Frame") then 
-									TweenService:Create(
-										v,
-										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-										{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
-									):Play()
-									TweenService:Create(
-										v.TextLabel,
-										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-										{TextColor3 = Color3.fromRGB(213, 213, 213)}
-									):Play()
+											end
+										end
+									end
+								else
+									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
+										if button:FindFirstChild("TextLabel") then
+											button.Visible = true
+										end
+									end
 								end
+							end)
+						else
+							local Button_2 = Instance.new("Frame")
+							local UICorner_10 = Instance.new("UICorner")
+							local TextButton_3 = Instance.new("TextButton")
+							local TextLabel_5 = Instance.new("TextLabel")
+
+							Button_2.Name = "Button"
+							Button_2.Parent = ScrollingFrame_2
+							Button_2.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+							Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							Button_2.BorderSizePixel = 0
+							Button_2.Position = UDim2.new(0, 0, 0.270586133, 0)
+							Button_2.Size = UDim2.new(0.949999988, 0, 0, 25)
+
+							UICorner_10.CornerRadius = UDim.new(0, 2)
+							UICorner_10.Parent = Button_2
+
+							TextButton_3.Parent = Button_2
+							TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TextButton_3.BackgroundTransparency = 1.000
+							TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							TextButton_3.BorderSizePixel = 0
+							TextButton_3.Size = UDim2.new(1, 0, 1, 0)
+							TextButton_3.Font = Enum.Font.SourceSans
+							TextButton_3.Text = ""
+							TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+							TextButton_3.TextSize = 14.000
+
+							TextLabel_5.Parent = Button_2
+							TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TextLabel_5.BackgroundTransparency = 1.000
+							TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							TextLabel_5.BorderSizePixel = 0
+							TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+							TextLabel_5.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+							TextLabel_5.Text = Text
+							TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
+							TextLabel_5.TextSize = TextSize
+
+							if TextLabel_5.Text == default then
+								for i, v in next, ScrollingFrame_2:GetChildren() do
+									if v:IsA("Frame") then 
+										TweenService:Create(
+											v,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
+										):Play()
+										TweenService:Create(
+											v.TextLabel,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{TextColor3 = Color3.fromRGB(213, 213, 213)}
+										):Play()
+									end
+								end
+								TweenService:Create(
+									Button_2,
+									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+									{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
+								):Play()
+								TweenService:Create(
+									TextLabel_5,
+									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+									{TextColor3 = Color3.fromRGB(255,255,255)}
+								):Play()
+								TextLabel_4.Text = text.." (".. Text ..")"
+								callback(default)
 							end
-							TweenService:Create(
-								Button_2,
-								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
-							):Play()
-							TweenService:Create(
-								TextLabel_5,
-								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{TextColor3 = Color3.fromRGB(255,255,255)}
-							):Play()
-							TextLabel_4.Text = text.." (".. Text ..")"
-							callback(default)
+
+							TextButton_3.MouseButton1Click:Connect(function()
+								for i, v in next, ScrollingFrame_2:GetChildren() do
+									if v:IsA("Frame") then 
+										TweenService:Create(
+											v,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
+										):Play()
+										TweenService:Create(
+											v.TextLabel,
+											TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+											{TextColor3 = Color3.fromRGB(213, 213, 213)}
+										):Play()
+									end
+								end
+								TweenService:Create(
+									Button_2,
+									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+									{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
+								):Play()
+								TweenService:Create(
+									TextLabel_5,
+									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+									{TextColor3 = Color3.fromRGB(255,255,255)}
+								):Play()
+								TextLabel_4.Text = text.." (".. Text ..")"
+								default = Text
+								callback(Text)
+							end)
 						end
-
-						TextButton_3.MouseButton1Click:Connect(function()
-							for i, v in next, ScrollingFrame_2:GetChildren() do
-								if v:IsA("Frame") then 
-									TweenService:Create(
-										v,
-										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-										{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
-									):Play()
-									TweenService:Create(
-										v.TextLabel,
-										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-										{TextColor3 = Color3.fromRGB(213, 213, 213)}
-									):Play()
-								end
-							end
-							TweenService:Create(
-								Button_2,
-								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
-							):Play()
-							TweenService:Create(
-								TextLabel_5,
-								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{TextColor3 = Color3.fromRGB(255,255,255)}
-							):Play()
-							TextLabel_4.Text = text.." (".. Text ..")"
-							default = Text
-							callback(Text)
-						end)
 					end
 					UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 						ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y + 35)
@@ -1448,6 +1501,7 @@ function library.Create(options)
 						end
 					end)
 
+					DropF:Add("Search")
 					for _, v in next,list do
 						DropF:Add(v)
 					end
@@ -1598,81 +1652,134 @@ function library.Create(options)
 					end
 
 					function DropF:Add(Text)
-						local Button_2 = Instance.new("Frame")
-						local UICorner_10 = Instance.new("UICorner")
-						local TextButton_3 = Instance.new("TextButton")
-						local TextLabel_5 = Instance.new("TextLabel")
+						if Text == "Search" then
+							local Button_2 = Instance.new("Frame")
+							local UICorner_10 = Instance.new("UICorner")
+							local TextLabel_5 = Instance.new("TextBox")
 
-						Button_2.Name = Text
-						Button_2.Parent = ScrollingFrame_2
-						Button_2.BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)
-						Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						Button_2.BorderSizePixel = 0
-						Button_2.Position = UDim2.new(0, 0, 0.270586133, 0)
-						Button_2.Size = UDim2.new(0.949999988, 0, 0, 25)
+							Button_2.Name = "Search"
+							Button_2.Parent = ScrollingFrame_2
+							Button_2.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+							Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							Button_2.BorderSizePixel = 0
+							Button_2.Position = UDim2.new(0, 0, 0.270586133, 0)
+							Button_2.Size = UDim2.new(0.949999988, 0, 0, 25)
 
-						UICorner_10.CornerRadius = UDim.new(0, 2)
-						UICorner_10.Parent = Button_2
+							UICorner_10.CornerRadius = UDim.new(0, 2)
+							UICorner_10.Parent = Button_2
 
-						TextButton_3.Parent = Button_2
-						TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						TextButton_3.BackgroundTransparency = 1.000
-						TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						TextButton_3.BorderSizePixel = 0
-						TextButton_3.Size = UDim2.new(1, 0, 1, 0)
-						TextButton_3.Font = Enum.Font.SourceSans
-						TextButton_3.Text = ""
-						TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-						TextButton_3.TextSize = 14.000
+							TextLabel_5.Parent = Button_2
+							TextLabel_5.Name = "TextLabel"
+							TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TextLabel_5.BackgroundTransparency = 1.000
+							TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							TextLabel_5.BorderSizePixel = 0
+							TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+							TextLabel_5.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+							TextLabel_5.Text = Text
+							TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
+							TextLabel_5.TextSize = TextSize
+							TextLabel_5.PlaceholderText = "Search"
+							TextLabel_5.Changed:Connect(function()
+								if TextLabel_5.Text ~= "" and TextLabel_5.Text ~= "Search" then
+									local InputText = string.upper(TextLabel_5.Text)
+									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
+										if button:FindFirstChild("TextLabel") then
+											if button:FindFirstChild("TextLabel").Text:find(string.upper(TextLabel_5.Text)) then
+												button.Visible = true
+											else
+												if button.Name ~= "Search" then
+													button.Visible = false
+												end
 
-						TextLabel_5.Parent = Button_2
-						TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-						TextLabel_5.BackgroundTransparency = 1.000
-						TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-						TextLabel_5.BorderSizePixel = 0
-						TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
-						TextLabel_5.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-						TextLabel_5.Text = Text
-						TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
-						TextLabel_5.TextSize = TextSize
-
-						TextButton_3.MouseButton1Click:Connect(function()
-							if not table.find(DropFF, Text) then
-								table.insert(DropFF, Text)
-								callback(DropFF, Text)
-								UpdateTextLabel()
-
-								TweenService:Create(
-									Button_2,
-									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-									{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
-								):Play()
-								TweenService:Create(
-									TextLabel_5,
-									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-									{TextColor3 = Color3.fromRGB(255,255,255)}
-								):Play()
-							else
-								TweenService:Create(
-									Button_2,
-									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-									{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
-								):Play()
-								TweenService:Create(
-									TextLabel_5,
-									TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-									{TextColor3 = Color3.fromRGB(213, 213, 213)}
-								):Play()
-								for i2, v2 in ipairs(DropFF) do
-									if v2 == Text then
-										table.remove(DropFF, i2)
-										callback(DropFF, Text)
-										UpdateTextLabel()
-										break
+											end
+										end
+									end
+								else
+									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
+										if button:FindFirstChild("TextLabel") then
+											button.Visible = true
+										end
 									end
 								end
-							end
-						end)
+							end)
+						else
+							local Button_2 = Instance.new("Frame")
+							local UICorner_10 = Instance.new("UICorner")
+							local TextButton_3 = Instance.new("TextButton")
+							local TextLabel_5 = Instance.new("TextLabel")
+
+							Button_2.Name = Text
+							Button_2.Parent = ScrollingFrame_2
+							Button_2.BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)
+							Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							Button_2.BorderSizePixel = 0
+							Button_2.Position = UDim2.new(0, 0, 0.270586133, 0)
+							Button_2.Size = UDim2.new(0.949999988, 0, 0, 25)
+
+							UICorner_10.CornerRadius = UDim.new(0, 2)
+							UICorner_10.Parent = Button_2
+
+							TextButton_3.Parent = Button_2
+							TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TextButton_3.BackgroundTransparency = 1.000
+							TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							TextButton_3.BorderSizePixel = 0
+							TextButton_3.Size = UDim2.new(1, 0, 1, 0)
+							TextButton_3.Font = Enum.Font.SourceSans
+							TextButton_3.Text = ""
+							TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+							TextButton_3.TextSize = 14.000
+
+							TextLabel_5.Parent = Button_2
+							TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							TextLabel_5.BackgroundTransparency = 1.000
+							TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							TextLabel_5.BorderSizePixel = 0
+							TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+							TextLabel_5.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+							TextLabel_5.Text = Text
+							TextLabel_5.TextColor3 = TextColorUI or Color3.fromRGB(142, 144, 150)
+							TextLabel_5.TextSize = TextSize
+
+							TextButton_3.MouseButton1Click:Connect(function()
+								if not table.find(DropFF, Text) then
+									table.insert(DropFF, Text)
+									callback(DropFF, Text)
+									UpdateTextLabel()
+
+									TweenService:Create(
+										Button_2,
+										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+										{BackgroundColor3 = DropDownSelect or Color3.fromRGB(61, 65, 90)}
+									):Play()
+									TweenService:Create(
+										TextLabel_5,
+										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+										{TextColor3 = Color3.fromRGB(255,255,255)}
+									):Play()
+								else
+									TweenService:Create(
+										Button_2,
+										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+										{BackgroundColor3 = MainBackground or Color3.fromRGB(48, 51, 71)}
+									):Play()
+									TweenService:Create(
+										TextLabel_5,
+										TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
+										{TextColor3 = Color3.fromRGB(213, 213, 213)}
+									):Play()
+									for i2, v2 in ipairs(DropFF) do
+										if v2 == Text then
+											table.remove(DropFF, i2)
+											callback(DropFF, Text)
+											UpdateTextLabel()
+											break
+										end
+									end
+								end
+							end)
+						end
 					end
 					UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 						ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y + 35)
@@ -1696,6 +1803,7 @@ function library.Create(options)
 						end
 					end)
 
+					DropF:Add("Search")
 					for _, v in next,list do
 						DropF:Add(v)
 					end
@@ -2331,5 +2439,4 @@ function library.Create(options)
 	end
 	return library.TapGroup
 end
-
 return library
