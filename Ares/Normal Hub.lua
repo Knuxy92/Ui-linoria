@@ -1643,13 +1643,7 @@ function library.Create(options)
 
 					local DropF = {}
 					local DropG = true
-					function DropF:Clear()
-						for i, v in next, ScrollingFrame_2:GetChildren() do
-							if v:IsA("Frame") then 
-								v:Destroy()
-							end
-						end
-					end
+
 
 					function DropF:Add(Text)
 						if Text == "Search" then
@@ -1682,16 +1676,14 @@ function library.Create(options)
 							TextLabel_5.PlaceholderText = "Search"
 							TextLabel_5.Changed:Connect(function()
 								if TextLabel_5.Text ~= "" and TextLabel_5.Text ~= "Search" then
-									local InputText = string.upper(TextLabel_5.Text)
 									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
 										if button:FindFirstChild("TextLabel") then
-											if button:FindFirstChild("TextLabel").Text:find(string.upper(TextLabel_5.Text)) then
+											if button:FindFirstChild("TextLabel").Text:find(TextLabel_5.Text) then
 												button.Visible = true
 											else
 												if button.Name ~= "Search" then
 													button.Visible = false
 												end
-
 											end
 										end
 									end
@@ -1781,6 +1773,16 @@ function library.Create(options)
 							end)
 						end
 					end
+
+					function DropF:Clear()
+						for i, v in next, ScrollingFrame_2:GetChildren() do
+							if v:IsA("Frame") then 
+								v:Destroy()
+							end
+						end
+						DropF:Add("Search")
+					end
+
 					UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 						ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y + 35)
 					end)
