@@ -747,7 +747,7 @@ function library.Create(options)
 			end)
 
 			library.FuncMain = {}
-			library.FuncMain.CreateLable = function(options)wait()
+			library.FuncMain.CreateLable = function(options)
 				local function add(par)
 					local Lable = Instance.new("Frame")
 					local UICorner_4 = Instance.new("UICorner")
@@ -811,7 +811,7 @@ function library.Create(options)
 				end
 				return TextTable
 			end
-			library.FuncMain.CreateToggle = function(options, Lock)wait()
+			library.FuncMain.CreateToggle = function(options, Lock)
 				local ToggleTable = {}
 				local Name = options.Name
 				local default = options.Value
@@ -1149,7 +1149,7 @@ function library.Create(options)
 				local ToggleTable = add();add(SearchPage)
 				return ToggleTable
 			end
-			library.FuncMain.CreateButton = function(options)wait()
+			library.FuncMain.CreateButton = function(options)
 				local function add(par)
 					local Name = options.Name or "Button"
 					local callback = options.Callback or function() end
@@ -1220,7 +1220,7 @@ function library.Create(options)
 				add();add(SearchPage)
 			end
 			library.FuncMain.CreateDropdown = function(options)
-				local default = options.Value or "";wait()
+				local default = options.Value or ""
 				local function add(par)
 					local text = options.Name
 					local list = options.List
@@ -1319,7 +1319,13 @@ function library.Create(options)
 
 					local DropF = {}
 					local DropG = true
-					
+					function DropF:Clear()
+						for i, v in next, ScrollingFrame_2:GetChildren() do
+							if v:IsA("Frame") then 
+								v:Destroy()
+							end
+						end
+					end
 
 					TextLabel_4.Text = text.." (".. ' None ' ..")"
 					function DropF:Add(Text)
@@ -1353,14 +1359,16 @@ function library.Create(options)
 							TextLabel_5.PlaceholderText = "Search"
 							TextLabel_5.Changed:Connect(function()
 								if TextLabel_5.Text ~= "" and TextLabel_5.Text ~= "Search" then
+									local InputText = string.upper(TextLabel_5.Text)
 									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
 										if button:FindFirstChild("TextLabel") then
-											if button:FindFirstChild("TextLabel").Text:find(TextLabel_5.Text) then
+											if button:FindFirstChild("TextLabel").Text:find(string.upper(TextLabel_5.Text)) then
 												button.Visible = true
 											else
 												if button.Name ~= "Search" then
 													button.Visible = false
 												end
+
 											end
 										end
 									end
@@ -1471,16 +1479,6 @@ function library.Create(options)
 							end)
 						end
 					end
-					
-					function DropF:Clear()
-						for i, v in next, ScrollingFrame_2:GetChildren() do
-							if v:IsA("Frame") then 
-								v:Destroy()
-							end
-						end
-						DropF:Add("Search")
-					end
-
 					UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 						ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y + 35)
 					end)
@@ -1502,7 +1500,7 @@ function library.Create(options)
 							):Play()
 						end
 					end)
-					
+
 					DropF:Add("Search")
 					for _, v in next,list do
 						DropF:Add(v)
@@ -1530,7 +1528,7 @@ function library.Create(options)
 				return DropF
 			end
 			library.FuncMain.CreateMultiDropdown = function(options)
-				local drop2;wait()
+				local drop2
 				local text = options.Name
 				local default = options.Value or {""}
 				local list = options.List
@@ -1645,13 +1643,7 @@ function library.Create(options)
 
 					local DropF = {}
 					local DropG = true
-					function DropF:Clear()
-						for i, v in next, ScrollingFrame_2:GetChildren() do
-							if v:IsA("Frame") then 
-								v:Destroy()
-							end
-						end
-					end
+
 
 					function DropF:Add(Text)
 						if Text == "Search" then
@@ -1684,16 +1676,14 @@ function library.Create(options)
 							TextLabel_5.PlaceholderText = "Search"
 							TextLabel_5.Changed:Connect(function()
 								if TextLabel_5.Text ~= "" and TextLabel_5.Text ~= "Search" then
-									local InputText = string.upper(TextLabel_5.Text)
 									for _, button in pairs(ScrollingFrame_2:GetChildren()) do
 										if button:FindFirstChild("TextLabel") then
-											if button:FindFirstChild("TextLabel").Text:find(string.upper(TextLabel_5.Text)) then
+											if button:FindFirstChild("TextLabel").Text:find(TextLabel_5.Text) then
 												button.Visible = true
 											else
 												if button.Name ~= "Search" then
 													button.Visible = false
 												end
-
 											end
 										end
 									end
@@ -1783,6 +1773,16 @@ function library.Create(options)
 							end)
 						end
 					end
+
+					function DropF:Clear()
+						for i, v in next, ScrollingFrame_2:GetChildren() do
+							if v:IsA("Frame") then 
+								v:Destroy()
+							end
+						end
+						DropF:Add("Search")
+					end
+
 					UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 						ScrollingFrame_2.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y + 35)
 					end)
@@ -1804,7 +1804,7 @@ function library.Create(options)
 							):Play()
 						end
 					end)
-					
+
 					DropF:Add("Search")
 					for _, v in next,list do
 						DropF:Add(v)
@@ -1858,7 +1858,6 @@ function library.Create(options)
 				return DropF
 			end
 			function library.FuncMain.CreateColorpicker(options)
-				wait()
 				local function add(par)
 					local Colorpicker = Instance.new("Frame")
 					local UICorner_11 = Instance.new("UICorner")
@@ -2074,7 +2073,6 @@ function library.Create(options)
 			end
 
 			function library.FuncMain.CreateInput(options)
-				wait()
 				local function add(par)
 					local Name = options.Name
 					local default = options.Value or ''
@@ -2153,7 +2151,7 @@ function library.Create(options)
 				add();add(SearchPage)
 			end
 			function library.FuncMain.CreateSlider(options)
-				local text = options.Name wait()
+				local text = options.Name
 				local callback = options.Format or function() end
 				local Max = options.Max
 				local Min = options.Min
@@ -2286,7 +2284,7 @@ function library.Create(options)
 				end
 				add();add(SearchPage)
 			end
-			function library.FuncMain.CreateImage(options) wait()
+			function library.FuncMain.CreateImage(options)
 				local function add(par)
 					local TableImg = {}
 					local Image = Instance.new("Frame")
@@ -2443,221 +2441,4 @@ function library.Create(options)
 	end
 	return library.TapGroup
 end
-
-
-TableSize = {
-	X = 700,
-	Y = 450,
-	TextSize = 12
-}
-	TableSize.TextSize = 14
-
-local Windown = library.Create({
-	Title = "Normal Hub | Premium Script Fisch", Logo = 78590114316385,
-	CornerRadius = 2, UISize = {
-		X = TableSize.X,
-		Y = TableSize.Y
-	},UIColor = {
-		['Shadow'] = Color3.fromRGB(53, 53, 53),
-		['MainBackground'] = Color3.fromRGB(24,24,24),
-		['Background2'] = Color3.fromRGB(45, 45, 45),
-		['ToggleO'] = Color3.fromRGB(53, 53, 53),
-		['TapButtonColor'] = Color3.fromRGB(255, 34, 97),
-		['DropDownSelect'] = Color3.fromRGB(53, 53, 53),
-		['TextColor'] = Color3.fromRGB(247, 227, 233),
-
-		['TextSize'] = TableSize.TextSize,
-	}
-})
-
-
-local Tap1 = Windown.CreateTap({
-	Title = "Home",
-	Icon = 15169955786
-})
-
-local Page1 = Tap1.CreatePage({
-	Side = "Left",
-})
-
-Page1.CreateLable({
-	Name = "Main Function"
-})
-
-local TT = Page1.CreateToggle({
-	Name = "ทำให้ UI ไม่ออก ขอบ",
-	Value = false,
-	Callback = function(v)
-		_G['ทำให้ UI ไม่ออก ขอบ'] = v
-	end,
-})
-
-Page1.CreateToggle({
-	Name = "Toggle",
-	Dis = "How to Open Function ClickMe Now",
-	Value = true,
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page1.CreateButton({
-	Name = "UnLocker",
-	Callback = function()
-		TT:UnLocker()
-	end,
-})
-
-Page1.CreateButton({
-	Name = "Locker",
-	Callback = function()
-		TT:Locker()
-	end,
-})
-
-Page1.CreateDropdown({
-	Name = "Dropdown",
-	Value = "1",
-	List = {"123","1","2","3","4","5"},
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-
-Page1.CreateMultiDropdown({
-	Name = "MultiDropdown",
-	Value = {"1"},
-	List = {"123","1","2","3","4","5"},
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page1.CreateColorpicker({ 
-	Title = "Colorpicker", 
-	Preset = Color3.fromRGB(255, 0, 4),
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page1.CreateInput({
-	Name = "TextBox",
-	Placeholder = "Test",
-	Value = "001",
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page1.CreateSlider({
-	Name = "Test",
-	Max = 10,
-	Min = 1,	
-	Value = 5,
-	Format = function(v)
-		print(v)
-	end,
-})
-
-Page1.CreateImage({
-	Title = "Blox Fruits",
-	Dis = "Player 1/2",
-	Image = 16917322600
-})
-local Tap1 = Windown.CreateTap({
-	Title = "Home",
-	Icon = 15169955786
-})
-
-local Page2 = Tap1.CreatePage({
-	Side = "Right",
-})
-
-Page2.CreateLable({
-	Name = "Main Function"
-})
-
-local TT = Page2.CreateToggle({
-	Name = "ทำให้ UI ไม่ออก ขอบ",
-	Value = false,
-	Callback = function(v)
-		_G['ทำให้ UI ไม่ออก ขอบ'] = v
-	end,
-})
-
-Page2.CreateToggle({
-	Name = "Toggle",
-	Dis = "How to Open Function ClickMe Now",
-	Value = true,
-	Callback = function(v)
-		print(v)
-	end,
-});TT:Locker()
-
-Page2.CreateButton({
-	Name = "UnLocker",
-	Callback = function()
-		TT:UnLocker()
-	end,
-})
-
-Page2.CreateButton({
-	Name = "Locker",
-	Callback = function()
-		TT:Locker()
-	end,
-})
-
-Page2.CreateDropdown({
-	Name = "Dropdown",
-	Value = "1",
-	List = {"123","1","2","3","4","5"},
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-
-Page2.CreateMultiDropdown({
-	Name = "MultiDropdown",
-	Value = {"1"},
-	List = {"123","1","2","3","4","5"},
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page2.CreateColorpicker({ 
-	Title = "Colorpicker", 
-	Preset = Color3.fromRGB(255, 0, 4),
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page2.CreateInput({
-	Name = "TextBox",
-	Placeholder = "Test",
-	Value = "001",
-	Callback = function(v)
-		print(v)
-	end,
-})
-
-Page2.CreateSlider({
-	Name = "Test",
-	Max = 10,
-	Min = 1,	
-	Value = 5,
-	Format = function(v)
-		print(v)
-	end,
-})
-
-Page2.CreateImage({
-	Title = "Blox Fruits",
-	Dis = "Player 1/2",
-	Image = 16917322600
-})
+return library
