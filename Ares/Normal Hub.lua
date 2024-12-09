@@ -1298,7 +1298,7 @@ function library.Create(options)
 					Main2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Main2.BorderSizePixel = 0
 					Main2.Position = UDim2.new(0, 0, 0, 30)
-					Main2.Size = UDim2.new(1, 0, 0, 92)
+					Main2.Size = UDim2.new(1, 0, 0, 150)
 
 					ScrollingFrame_2.Parent = Main2
 					ScrollingFrame_2.Active = true
@@ -1496,7 +1496,7 @@ function library.Create(options)
 							TweenService:Create(
 								Dropdown,
 								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{Size = UDim2.new(0.949999988, 0, 0, 130)}
+								{Size = UDim2.new(0.949999988, 0, 0, 200)}
 							):Play()
 						end
 					end)
@@ -1622,7 +1622,7 @@ function library.Create(options)
 					Main2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Main2.BorderSizePixel = 0
 					Main2.Position = UDim2.new(0, 0, 0, 30)
-					Main2.Size = UDim2.new(1, 0, 0, 92)
+					Main2.Size = UDim2.new(1, 0, 0, 150)
 
 					ScrollingFrame_2.Parent = Main2
 					ScrollingFrame_2.Active = true
@@ -1800,7 +1800,7 @@ function library.Create(options)
 							TweenService:Create(
 								Dropdown,
 								TweenInfo.new(0.4,Enum.EasingStyle.Back,Enum.EasingDirection.Out),
-								{Size = UDim2.new(0.949999988, 0, 0, 130)}
+								{Size = UDim2.new(0.949999988, 0, 0, 200)}
 							):Play()
 						end
 					end)
@@ -2441,4 +2441,5 @@ function library.Create(options)
 	end
 	return library.TapGroup
 end
+
 return library
