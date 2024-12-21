@@ -1,5 +1,5 @@
 local fish = game:GetService("ReplicatedStorage"):WaitForChild("Link"):WaitForChild("resources"):WaitForChild("animations"):WaitForChild("fish")
-local module = require(script:WaitForChild("presents"))
+local module = require(game:GetService("ReplicatedStorage").Link.modules.library.fish.presents)
 local tbl = {
 	["Desolate Deep"] = {
 		Trash = 22;
