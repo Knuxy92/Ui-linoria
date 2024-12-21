@@ -1,4 +1,4 @@
-local v1 = game:GetService("ReplicatedStorage"):WaitForChild("resources"):WaitForChild("animations"):WaitForChild("fish")
+local v1 = game:GetService("ReplicatedStorage"):FindFirstChild("Link") :WaitForChild("resources"):WaitForChild("animations"):WaitForChild("fish")
 local v2 = {
 	["Desolate Deep"] = {
 		["Trash"] = 22,
