@@ -450,7 +450,7 @@ function library.Create(options)
 
 	local OpenUI = true
 	UserInputService.InputBegan:Connect(function(input)
-		if input.KeyCode == options.KeyCode or Enum.KeyCode.LeftControl  then
+		if input.KeyCode == (options.KeyCode or Enum.KeyCode.LeftControl)  then
 			if OpenUI then
 				OpenUI = false
 				Shadown.Visible = false
