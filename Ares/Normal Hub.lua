@@ -82,11 +82,12 @@ end
 if par:FindFirstChild('Lux002') then
 	par:FindFirstChild('Lux002'):Destroy()
 end
-
+local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 local Lux002 = Instance.new("ScreenGui")
 Lux002.Name = "Lux002"
 Lux002.Parent = par
 Lux002.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ProtectGui(Lux002)
 
 function library.Create(options)
 	local Shadown = Instance.new("ImageLabel")
