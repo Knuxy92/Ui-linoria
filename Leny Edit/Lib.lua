@@ -61,7 +61,7 @@ local Modules = {
 }
 
 local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/L3nyFromV3rm/Leny-UI/refs/heads/main/Modules/Utility.lua", true))()
-local Theme = loadstring(game:HttpGetAsync("https://pastebin.com/raw/v4NYYnwF", true))()
+local Theme = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Knuxy92/Ui-linoria/refs/heads/main/Leny%20Edit/Theme.lua", true))()
 Library.Theme = Theme
 
 local Popups = ScreenGui.Popups
