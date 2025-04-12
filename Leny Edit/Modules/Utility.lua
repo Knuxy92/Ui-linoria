@@ -9,7 +9,7 @@ function Utility:tween(object, properties, duration, easingStyle, easingDirectio
 end
 
 function Utility:lookBeforeChildOfObject(indexFromLoop, object, specifiedObjectName)
-	local Object = object:GetChildren()[indexFromLoop-1]
+	local Object = object:GetChildren()[indexFromLoop - 1]
 	return Object and Object.Name == specifiedObjectName, Object
 end
 
@@ -36,8 +36,8 @@ end
 function Utility:getTransparentObjects(objects: Instance)
 	local TransparentObjects = {}
 
-	for _, object in ipairs(objects:GetDescendants()) do	
-		if object.Name ~= "CurrentValueLabel" and object.Name ~= "Checkmark" then -- exclusions, doing this way since it's more performant, and I'm lazy to do it in another way
+	for _, object in ipairs(objects:GetDescendants()) do
+		if object.Name ~= "CurrentValueLabel" and object.Name ~= "Checkmark" then
 			local hasBackgroundTransparency, backgroundTransparencyValue = pcall(function()
 				return object.BackgroundTransparency
 			end)
@@ -50,16 +50,16 @@ function Utility:getTransparentObjects(objects: Instance)
 				return object.ImageTransparency
 			end)
 
-			if (hasBackgroundTransparency and backgroundTransparencyValue <= 0.1)  then
-				table.insert(TransparentObjects, {object = object, property = "BackgroundTransparency"})
+			if hasBackgroundTransparency and backgroundTransparencyValue <= 0.1 then
+				table.insert(TransparentObjects, { object = object, property = "BackgroundTransparency" })
 			end
 
-			if (hasTextTransparency and textTransparencyValue <= 0.1) then
-				table.insert(TransparentObjects, {object = object, property = "TextTransparency"})
+			if hasTextTransparency and textTransparencyValue <= 0.1 then
+				table.insert(TransparentObjects, { object = object, property = "TextTransparency" })
 			end
 
-			if (hasImageTransparency and imageTransparencyValue <= 0.1) then
-				table.insert(TransparentObjects, {object = object, property = "ImageTransparency"})
+			if hasImageTransparency and imageTransparencyValue <= 0.1 then
+				table.insert(TransparentObjects, { object = object, property = "ImageTransparency" })
 			end
 		end
 	end
@@ -73,18 +73,14 @@ function Utility:validateKeys(context: table, requiredKeys: table)
 	end
 end
 
+-- ✅ รองรับทั้งคอมและมือถือแล้ว!
 local function dragging(library: table, ui: Instance, uiForResizing: Instance, callback)
-	local dragging, dragInput, dragStartPosition, currentUIPosition, currentUISizeForUIResizing
+	local dragging, dragStartPosition, currentUIPosition, currentUISizeForUIResizing
 	local eventNameToEnableDrag = "InputBegan"
 
 	local function update(input)
-		if typeof(dragStartPosition) == "Vector2" then
-			input = Vector2.new(input.Position.X, input.Position.Y)
-		else
-			input = input.Position
-		end
-
-		local delta = input - dragStartPosition
+		local inputPosition = input.Position or input
+		local delta = inputPosition - dragStartPosition
 		callback(delta, ui, currentUIPosition, currentUISizeForUIResizing)
 	end
 
@@ -99,33 +95,35 @@ local function dragging(library: table, ui: Instance, uiForResizing: Instance, c
 		end
 	end
 
-	local enableDrag = function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+	local function enableDrag(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			setInitialPositionsAndSize(input.Position)
 		end
 	end
 
+	-- พิเศษสำหรับ TextButton ที่ใช้ MouseButton1Down แทน
 	if ui.ClassName == "TextButton" then
 		eventNameToEnableDrag = "MouseButton1Down"
 
 		enableDrag = function()
-			setInitialPositionsAndSize(UserInputService:GetMouseLocation())
+			local mousePos = UserInputService:GetMouseLocation()
+			setInitialPositionsAndSize(Vector2.new(mousePos.X, mousePos.Y))
 		end
 	end
 
 	local function disableDrag(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = false
 			library.dragging = false
 		end
 	end
 
 	local function handleUpdate(input)
-		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
 			update(input)
 		end
 	end
-	
+
 	table.insert(library.Connections, ui[eventNameToEnableDrag]:Connect(enableDrag))
 	table.insert(library.Connections, UserInputService.InputChanged:Connect(handleUpdate))
 	table.insert(library.Connections, UserInputService.InputEnded:Connect(disableDrag))
@@ -133,13 +131,25 @@ end
 
 function Utility:draggable(library: table, uiToEnableDrag: Instance)
 	dragging(library, uiToEnableDrag, nil, function(delta, ui, currentUIPosition)
-		self:tween(ui, {Position = UDim2.new(currentUIPosition.X.Scale, currentUIPosition.X.Offset + delta.X, currentUIPosition.Y.Scale, currentUIPosition.Y.Offset + delta.Y)}, 0.15):Play()
+		self:tween(ui, {
+			Position = UDim2.new(
+				currentUIPosition.X.Scale,
+				currentUIPosition.X.Offset + delta.X,
+				currentUIPosition.Y.Scale,
+				currentUIPosition.Y.Offset + delta.Y
+			)
+		}, 0.15):Play()
 	end)
 end
 
 function Utility:resizable(library: table, uiToEnableDrag: Instance, uiToResize: Instance)
 	dragging(library, uiToEnableDrag, uiToResize, function(delta, ui, currentUIPosition, currentUISizeForUIResizing)
-		self:tween(uiToResize, {Size = UDim2.fromOffset(currentUISizeForUIResizing.X.Offset + delta.X, currentUISizeForUIResizing.Y.Offset + delta.Y)}, 0.15):Play()
+		self:tween(uiToResize, {
+			Size = UDim2.fromOffset(
+				currentUISizeForUIResizing.X.Offset + delta.X,
+				currentUISizeForUIResizing.Y.Offset + delta.Y
+			)
+		}, 0.15):Play()
 	end)
 end
 
