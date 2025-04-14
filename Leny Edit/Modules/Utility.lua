@@ -73,17 +73,27 @@ function Utility:validateKeys(context: table, requiredKeys: table)
 	end
 end
 
--- ✅ รองรับทั้งคอมและมือถือแล้ว!
 local function dragging(library: table, ui: Instance, uiForResizing: Instance, callback)
 	local dragging, dragStartPosition, currentUIPosition, currentUISizeForUIResizing
 	local eventNameToEnableDrag = "InputBegan"
 
 	local function update(input)
-		local inputPosition = input.Position or input
-		inputPosition = Vector2.new(inputPosition.X, inputPosition.Y)
+		local inputPosition = input.Position
+
+		if typeof(inputPosition) ~= typeof(dragStartPosition) then
+			if typeof(dragStartPosition) == "Vector3" then
+				inputPosition = Vector3.new(inputPosition.X, inputPosition.Y, inputPosition.Z or 0)
+			else
+				inputPosition = Vector2.new(inputPosition.X, inputPosition.Y)
+			end
+		end
+
 		local delta = inputPosition - dragStartPosition
 		callback(delta, ui, currentUIPosition, currentUISizeForUIResizing)
 	end
+
+
+
 
 	local function setInitialPositionsAndSize(initialDragStartPosition)
 		dragging = true
@@ -102,7 +112,6 @@ local function dragging(library: table, ui: Instance, uiForResizing: Instance, c
 		end
 	end
 
-	-- พิเศษสำหรับ TextButton ที่ใช้ MouseButton1Down แทน
 	if ui.ClassName == "TextButton" then
 		eventNameToEnableDrag = "MouseButton1Down"
 
@@ -132,16 +141,15 @@ end
 
 function Utility:draggable(library: table, uiToEnableDrag: Instance)
 	dragging(library, uiToEnableDrag, nil, function(delta, ui, currentUIPosition)
-		self:tween(ui, {
-			Position = UDim2.new(
-				currentUIPosition.X.Scale,
-				currentUIPosition.X.Offset + delta.X,
-				currentUIPosition.Y.Scale,
-				currentUIPosition.Y.Offset + delta.Y
-			)
-		}, 0.15):Play()
+		ui.Position = UDim2.new(
+			currentUIPosition.X.Scale,
+			currentUIPosition.X.Offset + delta.X,
+			currentUIPosition.Y.Scale,
+			currentUIPosition.Y.Offset + delta.Y
+		)
 	end)
 end
+
 
 function Utility:resizable(library: table, uiToEnableDrag: Instance, uiToResize: Instance)
 	dragging(library, uiToEnableDrag, uiToResize, function(delta, ui, currentUIPosition, currentUISizeForUIResizing)
