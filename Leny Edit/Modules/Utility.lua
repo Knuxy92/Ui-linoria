@@ -80,6 +80,7 @@ local function dragging(library: table, ui: Instance, uiForResizing: Instance, c
 
 	local function update(input)
 		local inputPosition = input.Position or input
+		inputPosition = Vector2.new(inputPosition.X, inputPosition.Y)
 		local delta = inputPosition - dragStartPosition
 		callback(delta, ui, currentUIPosition, currentUISizeForUIResizing)
 	end
