@@ -2,7 +2,6 @@
 # Ui For Normal Hub Project OR KNUXY92
 
 - [@Knuxy92](https://discordapp.com/users/1010021431075155979)
-- [@chxy.lua](https://discordapp.com/users/1279788240093577249)
 
 # Dev Script
 **Dark Dex Mobile**
