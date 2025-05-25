@@ -1361,8 +1361,8 @@ Library.Creator = Creator
 local New = Creator.New
 local Parent = RunService:IsStudio() and LocalPlayer.PlayerGui or game:GetService("CoreGui")
 for i,v in pairs(Parent:GetChildren()) do
-	if v:GetChildren("Fluent_Ui") then
-		v:Destroy()
+	if v:GetAttribute("Fluent_Ui") then
+		v:Destroy() 
 	end
 end
 local GUI = New("ScreenGui", {
