@@ -1359,10 +1359,16 @@ end
 Library.Creator = Creator
 
 local New = Creator.New
-
+local Parent = RunService:IsStudio() and LocalPlayer.PlayerGui or game:GetService("CoreGui")
+for i,v in pairs(Parent:GetChildren()) do
+	if v:GetChildren("Fluent_Ui") then
+		v:Destroy()
+	end
+end
 local GUI = New("ScreenGui", {
-	Parent = RunService:IsStudio() and LocalPlayer.PlayerGui or game:GetService("CoreGui"),
+	Parent = Parent,
 })
+GUI:SetAttribute("Fluent_Ui", true)
 Library.GUI = GUI
 ProtectGui(GUI)
 
