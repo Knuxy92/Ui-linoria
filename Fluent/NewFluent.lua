@@ -1632,8 +1632,12 @@ end
 Library.Creator = Creator
 Library.MiniMessageToRichText = MiniMessageToRichText
 local New = Creator.New
+
+if game.CoreGui:FindFirstChild("FluentUi") then game.CoreGui:FindFirstChild("FluentUi"):Destroy() end
+
 local GUI = New("ScreenGui", {
-	Parent = LocalPlayer:WaitForChild("PlayerGui"),
+	Parent = game.CoreGui,
+	Name = "FluentUi"
 })
 Library.GUI = GUI
 ProtectGui(GUI)
